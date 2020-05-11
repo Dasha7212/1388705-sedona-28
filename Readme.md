@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Даша](https://up.htmlacademy.ru/htmlcss/28/user/1388705).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Цапова] (https://up.htmlacademy.ru/htmlcss/28/user/1388705).
 
 ---
 
