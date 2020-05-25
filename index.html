@@ -110,55 +110,28 @@
         <p>
          <button type="button"> поиск гостиницы в седоне</button> 
         </p> 
-      <p>дата заезда:
-        <span>
-          <time datetime="2017-04-24">
-            24 апреля 2017
-          </time>
-         <button type="button">
-           <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
-         </button>
-        </span>
-      </p>
-      <p>дата выезда:
-        <span>
-          <time datetime="2017-07-04">
-            4 июля 2017
-          </time>
-         <button type="button">
-          <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
-         </button>
-        </span>
-      </p>
-      <p>взрослые:
-        <span>
-          <button type="button">
-            -
-          </button>
-          2
-          <button type="button">
-             +
-          </button>
-        </span>
-      </p>
-      <p>дети:
-        <span>
-          <button type="button">
-            -
-          </button>
-          0  
-          <button type="button">
-            +
-          </button>
-        </span>
-      </p>
-      <p>
-       <button type="button">
-         найти
-       </button>
-      </p>
-      </section>
 
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <label for arriveDate >Дата заезда:</label>
+          <input type="text" placeholder="24 апреля 2017" required id="arriveDate">
+          <button type="button">
+            <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
+          </button>
+          <p>
+          <label for leaveDate>Дата выезда:</label>
+          <input type="text" placeholder="4 июля 2017" required id="leaveDate">
+          <button type="button">
+            <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
+          </button>
+        </p>
+          <label for adults>Взрослые:</label>
+          <input type="number" min="1" step="1" id="adults">
+          <label for children>Дети:</label>
+          <input type="number" min="0" step="1" id="children">
+          <p>
+          <button type="submit">Найти</button>
+          </p>
+    </form>
       <section>
         <img src="img/map.png" width="1199" height="594" alt="Карта">
       </section>
