@@ -20,7 +20,7 @@
     </header>
 
     <main>
-    <img src="img/intro-welcome.svg" width="457" height="351" alt="Название">
+    <img src="img/intro-welcome.svg" width="457" height="351" alt="Welcome">
     <img src="img/intro-mask.svg" width="1200" height="57" alt="Фигура">
     
     <section>
@@ -107,30 +107,35 @@
         <h2>заинтересовались?</h2>
         <p>укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <p>
-         <button type="button"> поиск гостиницы в седоне</button> 
-        </p> 
+        <button type="button"> поиск гостиницы в седоне</button> 
+      </section>
 
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <label for arriveDate >Дата заезда:</label>
-          <input type="text" placeholder="24 апреля 2017" required id="arriveDate">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="arriveDate" >Дата заезда:</label>
+          <input type="text" placeholder="24 апреля 2017" required id="arriveDate" name="arrival_date">
           <button type="button">
             <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
           </button>
           <p>
-          <label for leaveDate>Дата выезда:</label>
-          <input type="text" placeholder="4 июля 2017" required id="leaveDate">
+          <label for="leaveDate">Дата выезда:</label>
+          <input type="text" placeholder="4 июля 2017" required id="leaveDate" name="departure_date">
           <button type="button">
             <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
           </button>
         </p>
-          <label for adults>Взрослые:</label>
-          <input type="number" min="1" step="1" id="adults">
-          <label for children>Дети:</label>
-          <input type="number" min="0" step="1" id="children">
-          <p>
+        <p>
+          <label for="adults">Взрослые:</label>
+          <button type="button">-</button>
+          <input type="number" min="1" step="1" id="adults" value="2" name="amount_of_adults">
+          <button type="button">+</button>
+        </p>
+        <p>
+          <label for="children">Дети:</label>
+          <button type="button">-</button>
+          <input type="number" min="0" step="1" id="children" value="0" name="amount_of_children">
+          <button type="button">+</button>
           <button type="submit">Найти</button>
-          </p>
+        </p>
     </form>
       <section>
         <img src="img/map.png" width="1199" height="594" alt="Карта">
@@ -140,7 +145,7 @@
     <footer>
       <p>
         #VISITSEDONA <br>
-        ТЕЛ: +7 (495) 666-01-66
+        ТЕЛ: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
       </p>
        <ul>
         <li> 
@@ -155,7 +160,7 @@
        </ul>
         <p>
          WEBSITE BY 
-         <img src="img/logo-htmlacademy.svg" width="114" height="40" alt="Логотип академии">
+         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="114" height="40" alt="Логотип академии"></a>
         </p>
    </footer>
   </body>
