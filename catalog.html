@@ -19,19 +19,20 @@
      </header>
      
    <section>
+    <form action="https://echo.htmlacademy.ru" method="post" >
      <fieldset>
      <legend> инфраструктура:</legend>
-      <p><input type="checkbox">бассейн<br>
-        <input type="checkbox">парковка<br>
-        <input type="checkbox">WI-FI<br>
+      <p><input type="checkbox" name="pool">бассейн<br>
+        <input type="checkbox" name="parking">парковка<br>
+        <input type="checkbox" name="wi-fi">WI-FI<br>
       </p> 
      </fieldset>
 
      <fieldset>
       <legend> тип жилья:</legend>
-       <p><input type="checkbox">гостиница<br>
-        <input type="checkbox">мотель<br>
-        <input type="checkbox">апартаменты<br>
+       <p><input type="checkbox" name="hotel">гостиница<br>
+        <input type="checkbox" name="motel">мотель<br>
+        <input type="checkbox"name="apartments">апартаменты<br>
        </p> 
       </fieldset>
      
@@ -40,10 +41,13 @@
       <legend>стоимость в сутки (Р):</legend>
       <span>от 0</span>
       <span>до 3000</span>
-      <hr>
-    </fieldset>
-      <button type="button">показать</button>
-    </section>
+      <input type="range" min="0" max="3000" step="1" name="price">
+     
+      <button type="submit">показать</button>
+      
+   </fieldset>
+  </form>
+ </section>
 
     <section>
       <h2>найдено: 3</h2>
@@ -60,8 +64,8 @@
          <img src="img/hotel-1.png" width="135" height="90" alt="AMARA RESORT & SPA">
         <span>гостиница</span>   
         <span>от 4000 р.</span> 
-        <button type ="button">подробнее</button>
-        <button type="button">забронировать</button>
+        <a href="index.html">Подробнее</a>
+        <a href="index.html">Забронировать</a>
         <span>рейтинг: 8,5</span>
         <span></span>
      </section>
@@ -71,8 +75,8 @@
        <img src="img/hotel-2.png" width="135" height="90" alt="DESERT QUAIL INN">
        <span>мотель</span>   
        <span>от 3000 р.</span>
-       <button type ="button">подробнее</button>
-       <button type ="button">забронировать</button>
+       <a href="index.html">Подробнее</a>
+       <a href="index.html">Забронировать</a>
        <span>рейтинг: 8,9</span>
        <span></span>
     </section>
@@ -82,8 +86,8 @@
        <img src="img/hotel-3.png" width="135" height="90" alt="VILLAS AT POCO DIABLO">
        <span>апартаменты</span>  
        <span>от 2000 р.</span>
-       <button type="button">подробнее</button>
-       <button type="button">забронировать</button>
+       <a href="index.html">Подробнее</a>
+       <a href="index.html">Забронировать</a>
        <span>рейтинг: 9,2</span>
        <span></span>
     </section>
@@ -91,7 +95,7 @@
     <footer>
         <p>
           #VISITSEDONA <br>
-          ТЕЛ: +7 (495) 666-01-66
+          ТЕЛ: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
         </p>
          <ul>
           <li> 
@@ -106,7 +110,7 @@
          </ul>
           <p>
            WEBSITE BY
-           <img src="img/logo-htmlacademy.svg" width="114" height="40" alt="Логотип академии">
+           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="114" height="40" alt="Логотип академии"></a>
           </p>
      </footer>
 </body>
