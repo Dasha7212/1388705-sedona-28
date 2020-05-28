@@ -22,18 +22,24 @@
     <form action="https://echo.htmlacademy.ru" method="post" >
      <fieldset>
      <legend> инфраструктура:</legend>
-      <p><input type="checkbox" name="pool">бассейн<br>
-        <input type="checkbox" name="parking">парковка<br>
-        <input type="checkbox" name="wi-fi">WI-FI<br>
-      </p> 
+     <label for="pool">бассейн</label>
+      <input type="checkbox" name="pool" id="pool"><br>
+      <label for="parking">стоянка</label>
+        <input type="checkbox" name="parking" id="parking"><br>
+        <label for="wi-fi">WI-FI</label>
+        <input type="checkbox" name="wi-fi" id="wi-fi">
+       
      </fieldset>
 
      <fieldset>
       <legend> тип жилья:</legend>
-       <p><input type="checkbox" name="hotel">гостиница<br>
-        <input type="checkbox" name="motel">мотель<br>
-        <input type="checkbox"name="apartments">апартаменты<br>
-       </p> 
+      <label for="hotel">гостиница</label>
+       <input type="checkbox" name="hotel" id="hotel"><br>
+       <label for="motel">мотель</label>
+        <input type="checkbox" name="motel" id="motel"><br>
+        <label for="apartments">апартаменты</label>
+        <input type="checkbox"name="apartments" id="apartments">
+        
       </fieldset>
      
      
@@ -42,10 +48,8 @@
       <span>от 0</span>
       <span>до 3000</span>
       <input type="range" min="0" max="3000" step="1" name="price">
-     
-      <button type="submit">показать</button>
-      
-   </fieldset>
+    </fieldset>
+   <button type="submit">показать</button>
   </form>
  </section>
 
@@ -53,19 +57,21 @@
       <h2>найдено: 3</h2>
       <p>сортировка:</p>
       <ul>
-        <li><a href="">по цене:</a></li>
+        <li><a href=""> цене:</a></li>
         <li><a href="">по типу:</a></li>
         <li><a href="">по рейтингу:</a></li>
       </ul>
       <button type="button"></button>
       <button type="button"></button>
+    </section>
     
+    <section>
          <h1>AMARA RESORT & SPA</h1>
          <img src="img/hotel-1.png" width="135" height="90" alt="AMARA RESORT & SPA">
         <span>гостиница</span>   
         <span>от 4000 р.</span> 
-        <a href="index.html">Подробнее</a>
-        <a href="index.html">Забронировать</a>
+        <a href="#l">Подробнее</a>
+       <a href="#">Забронировать</a>
         <span>рейтинг: 8,5</span>
         <span></span>
      </section>
@@ -75,8 +81,8 @@
        <img src="img/hotel-2.png" width="135" height="90" alt="DESERT QUAIL INN">
        <span>мотель</span>   
        <span>от 3000 р.</span>
-       <a href="index.html">Подробнее</a>
-       <a href="index.html">Забронировать</a>
+       <a href="#l">Подробнее</a>
+       <a href="#">Забронировать</a>
        <span>рейтинг: 8,9</span>
        <span></span>
     </section>
@@ -86,8 +92,8 @@
        <img src="img/hotel-3.png" width="135" height="90" alt="VILLAS AT POCO DIABLO">
        <span>апартаменты</span>  
        <span>от 2000 р.</span>
-       <a href="index.html">Подробнее</a>
-       <a href="index.html">Забронировать</a>
+       <a href="#l">Подробнее</a>
+       <a href="#">Забронировать</a>
        <span>рейтинг: 9,2</span>
        <span></span>
     </section>
