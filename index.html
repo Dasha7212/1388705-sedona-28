@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize .css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
 
     
-    <header>
-       <nav>
-          <ul>
+    <header class="main-header">
+       <nav class="navigation">
+          <ul class="navigation-words">
              <li><a href="">информация</a></li>
              <li><a href="">фото и видео</a></li>
              <li><a href="">карта штата</a></li>
@@ -20,15 +22,17 @@
     </header>
 
     <main>
-    <img src="img/intro-welcome.svg" width="457" height="351" alt="Welcome">
-    <img src="img/intro-mask.svg" width="1200" height="57" alt="Фигура">
+    <div class="main-logo">
+    <div class="welcome-logo"><img  src="img/intro-welcome.svg" width="457" height="351" alt="Welcome"></div>
+    <img class="figure" src="img/intro-mask.svg" width="1200" height="57" alt="Фигура">
+    </div>
     
-    <section>
-        <h2>
+    <section class="information">
+        <h2 class="town-sedona">
         седона - небольшой городок в аризоне,<br> 
         заслуживающий большего!
         </h2>
-        <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+        <p class="reasons">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
     </section>
     
     <section>
@@ -103,64 +107,82 @@
          </ul>
        </section>
 
-       <section>
+       <section class="dates-of-journey">
         <h2>заинтересовались?</h2>
         <p>укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="button"> поиск гостиницы в седоне</button> 
+        <button type="button" class="search-hotels"> поиск гостиницы в седоне</button> 
       </section>
 
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label for="arrive-date" >Дата заезда:</label>
-          <input type="text" placeholder="24 апреля 2017" required id="arrive-date" name="arrival-date">
-          <button type="button">
-            <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
-          </button>
+        <form action="https://echo.htmlacademy.ru" method="post" class="blank">
+          
+          <label for="arrive-date" class="label-arrive">Дата заезда:</label>
+
+          
+           <input type="text" placeholder="24 апреля 2017" required id="arrive-date" name="arrival-date" class="dates">
+           <button type="button" class="button-calendar">
+             <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
+           </button>
+       
+      
           <p>
           <label for="leave-date">Дата выезда:</label>
-          <input type="text" placeholder="4 июля 2017" required id="leave-date" name="departure-date">
-          <button type="button">
+          
+          <input type="text" placeholder="4 июля 2017" required id="leave-date" name="departure-date" class="dates">
+          <button type="button" class="button-calendar">
             <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
           </button>
+         
         </p>
         <p>
           <label for="adults">Взрослые:</label>
-          <button type="button">-</button>
-          <input type="number" min="1" step="1" id="adults" value="2" name="amount-of-adults">
-          <button type="button">+</button>
+
+          
+           <button type="button" class="button-for-people">-</button>
+           <input type="number" min="1" step="1" id="adults" value="2" name="amount-of-adults"class="people" >
+           <button type="button" class="button-for-people">+</button>
+       
         </p>
         <p>
           <label for="children">Дети:</label>
-          <button type="button">-</button>
-          <input type="number" min="0" step="1" id="children" value="0" name="amount-of-children">
-          <button type="button">+</button>
+
           
+           <button type="button" class="button-for-people">-</button>
+           <input type="number" min="0" step="1" id="children" value="0" name="amount-of-children" class="people">
+           <button type="button" class="button-for-people">+</button>
+         
         </p>
-        <button type="submit">Найти</button>
+        <button type="submit" class="search">Найти</button>
     </form>
       <section>
         <img src="img/map.png" width="1199" height="594" alt="Карта">
       </section>
     </main>
   
-    <footer>
-      <p>
-        #VISITSEDONA <br>
-        ТЕЛ: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
+    <footer class="main-footer">
+      <p class="contacts">
+        #visitsedona <br>
+        тел: <a href="tel:+74956660166" class="phone">+7 (495) 666-01-66</a>
       </p>
-       <ul>
-        <li> 
-          <a href="#"> <img src="img/twitter.svg" width="17" height="16" alt="Твиттер"> </a>
-        </li>
-        <li> 
-          <a href="#"> <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"> </a>
-        </li>
-        <li> 
-          <a href="#"> <img src="img/youtube.svg" width="20" height="16" alt="Твиттер"> </a>
-        </li>
+       <ul class="socials">
+        <div class="social-icons">
+          <li> 
+            <a href="#"> <img src="img/twitter.svg" width="17" height="16" alt="Твиттер"> </a>
+          </li>
+        </div>
+        <div class="social-icons">
+          <li> 
+            <a href="#"> <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"> </a>
+          </li>
+        </div>
+        <div class="social-icons">
+           <li> 
+            <a href="#"> <img src="img/youtube.svg" width="20" height="16" alt="Твиттер"> </a>
+          </li>
+        </div>
        </ul>
-        <p>
-         WEBSITE BY 
+        <p class="website">
+         website by
          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="114" height="40" alt="Логотип академии"></a>
         </p>
    </footer>
