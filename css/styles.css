@@ -19,8 +19,11 @@
     --blue: #81B3D2;
     --grey: #EEEEEE;
     --brown: #766537; 
-    --light-grey: #F2F2F2; 
+    --light-grey:#F2F2F2; 
     --black: #000000;
+    --light-black: #333333; 
+    --for-current-page: #766357;
+    --for-rating: #666666;
 }
 
 body {
@@ -49,11 +52,11 @@ img{
     background-color: var(--white);
 }
 
-.navigation-words{
+.navigation-item{
     list-style: none;
 }
 
-.navigation-words a{
+.navigation-item a{
     color: var(--black);
 }
 
@@ -89,15 +92,18 @@ img{
 .reasons{
     font-size: 14px;
     line-height: 26px;
+    color: var(--light-black);
 }
 
-.dates-of-journey{
+.dates-of-journey h2{
     text-align: center;
     font-size: 30px;
     line-height: 24px;
 }
 .dates-of-journey p{
-    font-size: 21px;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--light-black);
 }
 .search-hotels{
     font: inherit;
@@ -110,6 +116,7 @@ img{
     text-transform: uppercase;
     text-align: center;
     border: none;
+    line-height: 26px;
 }
 
 .blank{
@@ -131,6 +138,10 @@ img{
     width: 346px;
     height: 38px;
     background-color: var(--light-grey);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    font: inherit;
     
 }
 .people{
@@ -139,6 +150,10 @@ img{
     border: none;
     background-color: var(--light-grey);
     text-align: center;
+    font: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
 }
 
 .button-calendar{
@@ -160,6 +175,7 @@ img{
     border: none;
     font-size: 21px;
     text-transform: uppercase;
+    line-height: 26px;
 } 
 
 .main-footer{
@@ -172,12 +188,13 @@ img{
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    text-transform: uppercase;
+    
     
 }
 .website{
     font-size: 14px;
     text-transform: uppercase;
+    line-height: 26px;
 }
 
 .social-icons{
@@ -194,17 +211,19 @@ img{
     color: var(--black);
 }
 
-h1 .hotels{
+.hotels h1{
     font: inherit;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+    text-transform: uppercase;
 }
 
-span .hotels{
+.hotels span{
     font: inherit;
     font-size: 14px;
-    line-height: 21px
+    line-height: 21px;
+    color: var(--light-black);
 }
  
 .more{
@@ -218,21 +237,38 @@ span .hotels{
     font-size: 14px;
     text-align: center;
 }
-
-.div-for-book{
+.more{
+    display: block;
+    width: 110px;
+    height: 27px;
+    background-color: var(--blue);
+}
+.book{
+    display: block;
     width: 142px;
     height: 27px;
     background-color: var(--brown);
 }
 
-.div-for-more{
-    width: 110px;
-    height: 27px;
-    background-color: var(--blue);
-}
+
 
 .rating{
     background-color: var(--grey);
+    color: var(--for-rating);
     width: 110px;
     height: 27px; 
+}
+
+.current-page{
+    color: var(--for-current-page);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    
+}
+
+.description{
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--light-black);
 }
