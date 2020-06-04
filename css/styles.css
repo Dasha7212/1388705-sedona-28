@@ -161,11 +161,6 @@ img{
     background-color: var(--light-grey);
 } 
 
-
-
-
-
-
  .search{
     width: 458px;
     height: 58px;
@@ -219,6 +214,33 @@ img{
     text-transform: uppercase;
 }
 
+.hotels p{
+    font: inherit;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--black);
+}
+
+.hotels li{
+    list-style: none;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.hotels h2 {
+    font: inherit;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--black);
+}
+
+.hotels ul:first-of-type{
+    color: var(--blue);
+    font-size: 12px;
+    line-height: 18px;
+}
+
 .hotels span{
     font: inherit;
     font-size: 14px;
@@ -250,8 +272,6 @@ img{
     background-color: var(--brown);
 }
 
-
-
 .rating{
     background-color: var(--grey);
     color: var(--for-rating);
@@ -259,12 +279,11 @@ img{
     height: 27px; 
 }
 
-.current-page{
+.navigation-item, .current-page{
     color: var(--for-current-page);
     font-weight: bold;
     font-size: 14px;
-    line-height: 26px;
-    
+    line-height: 26px; 
 }
 
 .description{
@@ -272,3 +291,121 @@ img{
     line-height: 21px;
     color: var(--light-black);
 }
+
+.real-town, .bridge{
+    width: 400px;
+    height: 256px;
+    background-color: var(--blue);
+    text-align: center;
+}
+
+.real-town h2, .bridge h2{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--white);
+}
+
+.real-town p, .bridge p{
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white);
+}
+
+.facilities{
+    background-color: var(--white);
+    text-align: center;
+}
+
+.facilities li, .advantages li{
+    list-style: none;
+}
+
+.facilities h2, .advantages h2{
+    font:inherit;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--black);
+}
+
+.facilities p, .advantages p{
+    font:inherit;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--light-black);
+}
+
+.advantages{
+    background-color: var(--grey);
+    text-align: center; 
+    width: 1200px;
+    /* height: 256px; */
+}
+
+.map{
+    width: 1199px;
+    height: 594px; 
+}
+
+.filter{
+    width: 1200px;
+    height: 217px;
+    background-image: url("../img/backgroundbackground-2-photo.png");
+}
+
+.filter legend{
+    font:inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--white);
+}
+
+.filter label{
+    font: inherit;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white);
+}
+
+.filter fieldset{
+    border: none;
+}
+
+.price-filter{
+    border: none;
+    color: var(--white);
+}
+
+.price-filter div {
+    width: 317px;
+    height: 36px;
+    border-style: solid;
+    border-color: var(--white);
+    font:inherit;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.price-filter legend{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.button-show{
+    width: 137px;
+    height: 36px;
+    border: 2px solid var(--white);
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white);
+    text-transform: uppercase;
+    font: inherit;
+}
+
+
+
+

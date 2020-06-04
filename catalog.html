@@ -14,13 +14,14 @@
               <li><a href="">информация</a></li>
               <li><a href="">фото и видео</a></li>
               <li><a href="">карта штата</a></li>
-              <li><a href="" class="current-page">гостиницы</a></li>
+              <li class="current-page"><a href="">гостиницы</a></li>
            </ul>
            <a href="index.html"><img src="img/logo-sedona.svg" width="138" height="70" alt="Наш логотип"></a>
         </nav>
      </header>
      
    <section>
+   <div class="filter">
     <form action="https://echo.htmlacademy.ru" method="post" >
      <fieldset>
      <legend> инфраструктура:</legend>
@@ -39,8 +40,8 @@
      <fieldset>
       <legend> тип жилья:</legend>
       
-       <input type="checkbox" name="hotel" id="hotel">
-       <label for="hotel">гостиница</label><br>
+        <input type="checkbox" name="hotel" id="hotel">
+        <label for="hotel">гостиница</label><br>
       
         <input type="checkbox" name="motel" id="motel">
         <label for="motel">мотель</label><br>
@@ -49,31 +50,35 @@
         <label for="apartments">апартаменты</label>
         
       </fieldset>
+    </div>
      
-     
-    <fieldset>
+    <fieldset class="price-filter">
       <legend>стоимость в сутки (Р):</legend>
-      <span>от 0</span>
-      <span>до 3000</span>
+      <div>
+       <span>от 0</span>
+       <span>до 3000</span>
+      </div>
       <input type="range" min="0" max="3000" step="1" name="price">
     </fieldset>
-   <button type="submit">показать</button>
+   <button type="submit" class="button-show">показать</button>
   </form>
  </section>
 
     <section>
-      <h2>найдено: 3</h2>
-      <p>сортировка:</p>
-      <ul>
-        <li><a href="">по цене:</a></li>
-        <li><a href="">по типу:</a></li>
-        <li><a href="">по рейтингу:</a></li>
-      </ul>
-      <a href=""></a>
-      <a href=""></a>
+      <div class="hotels">
+       <h2>найдено: 3</h2>
+       <p>сортировка:</p>
+       <ul>
+         <li><a href="">по цене:</a></li>
+         <li><a href="">по типу:</a></li>
+         <li><a href="">по рейтингу:</a></li>
+       </ul>
+       <a href=""></a>
+       <a href=""></a>
+     
     </section>
 
-  <div class="hotels">
+  
     <section>
          <h1>amara resort & spa</h1>
          <img src="img/hotel-1.png" width="135" height="90" alt="AMARA RESORT & SPA">
