@@ -14,16 +14,40 @@
     font-style: normal;
 }
 
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+
 :root {
     --white: #FFFFFF;
     --blue: #81B3D2;
     --grey: #EEEEEE;
-    --brown: #766537; 
+    --brown: #766357; 
     --light-grey:#F2F2F2; 
     --black: #000000;
     --light-black: #333333; 
     --for-current-page: #766357;
     --for-rating: #666666;
+}
+.page{
+    height: 100%;
+}
+
+.page-body{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: flex-start;
+}
+
+.main-header{
+    outline: 5px solid palevioletred;
+    outline-offset: -5px;
+} 
+
+.main-header img{
+    outline: 5px solid red;
+    outline-offset: -5px;
 }
 
 body {
@@ -33,7 +57,7 @@ body {
     font-family: "PT Sans", Arial, sans-serif;
     line-height: 21px;
     text-transform: uppercase;
-    background-color: var(--white);
+    background-color: var(--light-grey);
 }
 
 a{
@@ -46,6 +70,9 @@ img{
 }
 
 .navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 14px;
     font-weight: bold;
     line-height: 26px;
@@ -54,11 +81,17 @@ img{
 
 .navigation-item{
     list-style: none;
+    outline: 5px solid pink;
+    outline-offset: -5px;
+    width: 100%;
+    margin-bottom: 60px;
 }
 
 .navigation-item a{
     color: var(--black);
 }
+
+
 
 .main-logo{
     width: 1200px;
@@ -74,13 +107,102 @@ img{
 }
 
 .figure{
-    position: absolute;
-    top: 509px;
+    margin-bottom: -7px;
 }
+
 
 .information{
     text-align: center;
     background-color: var(--white);
+}
+
+.real-town{
+    outline: 5px solid greenyellow;
+    outline-offset: -5px;
+}
+
+.real-town-section img{
+    outline: 5px solid green;
+    outline-offset: -5px;
+}
+
+.real-town-section{
+    outline: 5px solid darkblue;
+    outline-offset: -5px;
+    display: flex;
+}
+
+.facilities{
+    outline: 5px solid teal;
+    outline-offset: -5px;
+}
+
+.facilities li{
+    outline: 5px solid tomato;
+    outline-offset: -5px;
+}
+
+.food{
+    width: 400px;
+    justify-self: center;
+}
+
+.house{
+    width: 400px;
+    justify-self: start;
+}
+
+.souvenirs{
+    width: 400px;
+    justify-self: end;
+}
+
+.area{
+    width: 400px;
+    justify-self: start;
+}
+
+.beautiful-road{
+    width: 400px;
+    justify-self: center;
+}
+
+.less-people{
+    width: 400px;
+    justify-self: end;
+}
+.facilities ul{
+    display: flex;
+}
+
+.bridge-section img{
+    outline: 5px solid fuchsia;
+    outline-offset: -5px;
+}
+
+.bridge{
+    outline: 5px solid lawngreen;
+    outline-offset: -5px;
+}
+
+.bridge-section {
+    outline: 5px solid rebeccapurple;
+    outline-offset: -5px;
+    display: flex;
+}
+
+.advantages{
+    outline: 5px solid violet;
+    outline-offset: -5px;
+}
+
+.advantages li{
+    outline: 5px solid purple;
+    outline-offset: -5px;
+}
+
+.advantages ul{
+    display: flex;
 }
 
 .town-sedona{
@@ -104,9 +226,12 @@ img{
     font-size: 14px;
     line-height: 24px;
     color: var(--light-black);
+    text-align: center;
+    margin-top: 61px;
 }
 .search-hotels{
     font: inherit;
+    text-align: center;
     width: 568px;
     height: 86px;
     font-weight: bold;
@@ -114,7 +239,6 @@ img{
     background-color: var(--brown);
     color:var(--white);
     text-transform: uppercase;
-    text-align: center;
     border: none;
     line-height: 26px;
 }
@@ -173,12 +297,6 @@ img{
     line-height: 26px;
 } 
 
-.main-footer{
-    color: var(--black);
-    background-color: var(--white);
-
-}
-
 .contacts{
     font-weight: bold;
     font-size: 21px;
@@ -235,10 +353,17 @@ img{
     color: var(--black);
 }
 
-.hotels ul:first-of-type{
+.price {
     color: var(--blue);
     font-size: 12px;
     line-height: 18px;
+}
+
+.type-rate{
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--black);
+    border-bottom: 1px dashed var(--blue);
 }
 
 .hotels span{
@@ -279,7 +404,7 @@ img{
     height: 27px; 
 }
 
-.navigation-item, .current-page{
+.navigation-item .current-page{
     color: var(--for-current-page);
     font-weight: bold;
     font-size: 14px;
@@ -290,23 +415,24 @@ img{
     font-size: 14px;
     line-height: 21px;
     color: var(--light-black);
+   
 }
 
-.real-town, .bridge{
+.real-town .bridge{
     width: 400px;
     height: 256px;
     background-color: var(--blue);
     text-align: center;
 }
 
-.real-town h2, .bridge h2{
+.real-town h2 .bridge h2{
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
     color: var(--white);
 }
 
-.real-town p, .bridge p{
+.real-town p .bridge p{
     font-size: 14px;
     line-height: 21px;
     color: var(--white);
@@ -405,7 +531,86 @@ img{
     text-transform: uppercase;
     font: inherit;
 }
+.contacts{
+    outline: 5px solid gold;
+    outline-offset: -5px; 
+    padding-top: 4px;
+    padding-left: 13px;
+}
 
+.socials{
+    outline: 5px solid greenyellow;
+    outline-offset: -5px; 
+}
+
+.website{
+    outline: 5px solid rebeccapurple;
+    outline-offset: -5px; 
+}
+
+.main-footer{
+    color: var(--black);
+    background-color: var(--white);
+    width: 100%;
+    outline: 5px solid red;
+    outline-offset: -5px;
+}
+
+.main-footer .footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section-for-contacts{
+    text-align: left;
+    padding-left: 117px;
+    width: 251px;
+    line-height: 9px;
+}
+
+.section-for-socials{
+    padding-top: 36px;
+    width: 138px;
+}
+
+.website{
+    padding-top: 49px;
+
+}
+
+.website a{
+    padding-top: 38px;
+}
+
+.current-page {
+    color: var(--for-current-page);
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.choose-hotel{
+    outline: 5px solid salmon;
+    outline-offset: -5px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+.choose-hotel section{
+    outline: 5px solid saddlebrown;
+    outline-offset: -5px;
+
+}
+
+.choose-hotel section h1{
+    padding-left: 237px;
+}
+
+.page-wrapper{
+    margin: 0 auto;
+    width: 1291px;
+    background-color: var(--white);
+}
 
 
 

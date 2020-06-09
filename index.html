@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize .css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
-
+  <body class="page-body">
+  <div class="page-wrapper">
     
     <header class="main-header">
+     <div class="container">
        <nav class="navigation">
+          <img src="img/logo-sedona.svg" width="138" height="70" alt= "логотип Седона">
           <ul class="navigation-item">
              <li><a href="">информация</a></li>
              <li><a href="">фото и видео</a></li>
              <li><a href="">карта штата</a></li>
              <li><a href="catalog.html">гостиницы</a></li>
           </ul>
-           <img src="img/logo-sedona.svg" width="138" height="70" alt= "логотип Седона">
-       </nav>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main >
     <div class="main-logo">
     <div class="welcome-logo"><img  src="img/intro-welcome.svg" width="457" height="351" alt="Welcome"></div>
-    <img class="figure" src="img/intro-mask.svg" width="1200" height="57" alt="Фигура">
+    <img class="figure" src="img/intro-mask.svg" width="1200" height="56" alt="Фигура">
     </div>
+    
     
     <section class="information">
         <h2 class="town-sedona">
@@ -34,35 +37,36 @@
         </h2>
         <p class="reasons">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
     </section>
+   
     
-    <section>
+    <section class="real-town-section">
       <div class="real-town">
          <h2>настоящий<br>
            городок</h2>
          <p>-№1-</p>
-         <p>седона — не аттракцион для туристов, там<br>
+         <p class="par">седона — не аттракцион для туристов, там<br>
             течёт своя жизнь
         </p>
       </div>
         <img src="img/photo-1.png" width="800" height="256" alt="Фотография Седоны">
     </section>
 
-    <section>
+    <section class="facilities-section">
       <div class="facilities">
          <ul>
-           <li>
+           <li class="house">
             <img src="img/icon-1.svg" width="75" height="72" alt="Иконка дома">
             <h2>жильё</h2>
             <p>рекомендуем пожить в настоящем<br>
                мотеле, всё как в кино!</p>
            </li>
-           <li>
+           <li class="food">
             <img src="img/icon-3.svg" width="75" height="70" alt="Иконка еды">
             <h2>еда</h2>
             <p>всегда заказывайте фирменный бургер,<br>
                вы не разочаруетесь!</p>
            </li>
-           <li>
+           <li class="souvenirs">
             <img src="img/icon-2.svg"  width="64" height="77" alt="Иконка подарка">
             <h2>сувениры</h2>
             <p>не только китайского, но и местного<br>
@@ -72,7 +76,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="bridge-section">
         <img src="img/photo-2.png" width="800" height="256" alt="Мост дьявола">
         <div class="bridge">
          <h2>там есть<br>
@@ -87,14 +91,14 @@
       <section>
         <div class="advantages">
          <ul>
-           <li>
+           <li class="area">
             <h2>небольшая<br>
                площадь</h2>
             <p>-№3-</p>
             <p>все достопримечательности находятся<br> 
               очень близко</p>
            </li>
-           <li>
+           <li class="beautiful-road">
             <h2>красивая<br>
                дорога</h2>
             <p>-№4-</p>
@@ -102,7 +106,7 @@
               не скучно!
             </p>
            </li>
-           <li>
+           <li class="less-people">
             <h2>мало<br>
             туристов
             </h2>
@@ -169,32 +173,40 @@
       </section>
     </main>
   
-    <footer class="main-footer">
-      <p class="contacts">
-        #visitsedona <br>
-        тел: <a href="tel:+74956660166" class="phone">+7 (495) 666-01-66</a>
-      </p>
-       <ul class="socials">
-        <div class="social-icons">
-          <li> 
-            <a href="#"> <img src="img/twitter.svg" width="17" height="16" alt="Твиттер"> </a>
-          </li>
-        </div>
-        <div class="social-icons">
-          <li> 
-            <a href="#"> <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"> </a>
-          </li>
-        </div>
-        <div class="social-icons">
-           <li> 
-            <a href="#"> <img src="img/youtube.svg" width="20" height="16" alt="Твиттер"> </a>
-          </li>
-        </div>
-       </ul>
+  <footer class="main-footer">
+    <div class="footer-container">
+      <section class="section-for-contacts">
+        <p class="contacts">
+          #visitsedona <br>
+          тел: <a href="tel:+74956660166" class="phone">+7 (495) 666-01-66</a>
+        </p>
+      </section>
+      <section class="section-for-socials">
+         <ul class="socials">
+          <div class="social-icons">
+            <li> 
+              <a href="#"> <img src="img/twitter.svg" width="17" height="16" alt="Твиттер"> </a>
+            </li>
+          </div>
+          <div class="social-icons">
+            <li> 
+              <a href="#"> <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"> </a>
+            </li>
+          </div>
+          <div class="social-icons">
+             <li> 
+              <a href="#"> <img src="img/youtube.svg" width="20" height="16" alt="Твиттер"> </a>
+            </li>
+          </div>
+         </ul>
+      </section>
+
         <p class="website">
          website by
          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="114" height="40" alt="Логотип академии"></a>
         </p>
+      </div>
    </footer>
+  </div>
   </body>
 </html>
