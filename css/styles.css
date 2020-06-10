@@ -80,6 +80,7 @@ img{
 }
 
 .navigation-item{
+    margin-left: 73px;
     list-style: none;
     outline: 5px solid pink;
     outline-offset: -5px;
@@ -104,6 +105,7 @@ img{
 
 .welcome-logo{
     text-align: center;
+    padding-top: 77px;
 }
 
 .figure{
@@ -119,6 +121,29 @@ img{
 .real-town{
     outline: 5px solid greenyellow;
     outline-offset: -5px;
+    margin-top: 47px;
+}
+
+.its-own-life{
+    margin-top: -15px;
+}
+
+ .is-not-attraction{
+    margin-top: 23px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 54px;
+} 
+.real-town{
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 51px;
+}
+
+.real-town h2 {
+    max-width: 270px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .real-town-section img{
@@ -130,6 +155,10 @@ img{
     outline: 5px solid darkblue;
     outline-offset: -5px;
     display: flex;
+    text-align: center;
+    margin-top: 51px;
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 .facilities{
@@ -183,17 +212,30 @@ img{
 .bridge{
     outline: 5px solid lawngreen;
     outline-offset: -5px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 51px;
+}
+
+.bridge p{
+    font-size: 14px;
+line-height: 21px;
+
 }
 
 .bridge-section {
     outline: 5px solid rebeccapurple;
     outline-offset: -5px;
     display: flex;
+    text-align: center;
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 .advantages{
     outline: 5px solid violet;
     outline-offset: -5px;
+    height: 256px;
 }
 
 .advantages li{
@@ -211,13 +253,16 @@ img{
     line-height: 26px;
 }
 
+
 .reasons{
     font-size: 14px;
     line-height: 26px;
     color: var(--light-black);
+    margin-top: 51px;
 }
 
 .dates-of-journey h2{
+    padding-top: 50px;
     text-align: center;
     font-size: 30px;
     line-height: 24px;
@@ -227,9 +272,9 @@ img{
     line-height: 24px;
     color: var(--light-black);
     text-align: center;
-    margin-top: 61px;
 }
 .search-hotels{
+    margin-left: 316px;
     font: inherit;
     text-align: center;
     width: 568px;
@@ -241,10 +286,10 @@ img{
     text-transform: uppercase;
     border: none;
     line-height: 26px;
+    margin-top: 50px;
 }
 
 .blank{
-    text-align: center;
     background-color: var(--white);
     font-size: 14px;
     font: inherit;
@@ -253,8 +298,8 @@ img{
     font-weight: bold;
     width: 568px;
     height: 395px;
-    margin-left: 356px;
-    padding-top: 67px;
+    margin: 0 auto;
+    padding-top: 55px;
 }
 
 .dates {
@@ -286,6 +331,7 @@ img{
 } 
 
  .search{
+    margin-left: 55px;
     width: 458px;
     height: 58px;
     background-color: var(--blue);
@@ -295,6 +341,7 @@ img{
     font-size: 21px;
     text-transform: uppercase;
     line-height: 26px;
+    margin-top: 54px;
 } 
 
 .contacts{
@@ -377,20 +424,18 @@ img{
     color: var(--white);
     font-size: 14px;
     text-align: center;
+    margin-top: 15px;
+    display: block;
+    width: 110px;
+    height: 27px;
+    background-color: var(--blue);
 }
 
 .book{
     color: var(--white); 
     font-size: 14px;
     text-align: center;
-}
-.more{
-    display: block;
-    width: 110px;
-    height: 27px;
-    background-color: var(--blue);
-}
-.book{
+    margin-top: 15px;
     display: block;
     width: 142px;
     height: 27px;
@@ -398,6 +443,9 @@ img{
 }
 
 .rating{
+    margin-left: 1017px;
+    margin-right: 73px;
+    margin-bottom: 31px;
     background-color: var(--grey);
     color: var(--for-rating);
     width: 110px;
@@ -441,10 +489,18 @@ img{
 .facilities{
     background-color: var(--white);
     text-align: center;
+    height: 330px;
 }
 
 .facilities li, .advantages li{
     list-style: none;
+}
+
+.paragraphs{
+    margin-top: -15px;
+}
+.facilities li{
+    padding-top: 68px;
 }
 
 .facilities h2, .advantages h2{
@@ -462,11 +518,15 @@ img{
     color: var(--light-black);
 }
 
+.facilities h2{
+    margin-bottom: 25px;
+    margin-top: 28px;
+}
+
 .advantages{
     background-color: var(--grey);
     text-align: center; 
     width: 1200px;
-    /* height: 256px; */
 }
 
 .map{
@@ -563,13 +623,13 @@ img{
 
 .section-for-contacts{
     text-align: left;
-    padding-left: 117px;
+    margin-left: 117px;
     width: 251px;
     line-height: 9px;
 }
 
 .section-for-socials{
-    padding-top: 36px;
+    margin: 0 auto;
     width: 138px;
 }
 
@@ -599,7 +659,6 @@ img{
 .choose-hotel section{
     outline: 5px solid saddlebrown;
     outline-offset: -5px;
-
 }
 
 .choose-hotel section h1{
@@ -608,9 +667,51 @@ img{
 
 .page-wrapper{
     margin: 0 auto;
-    width: 1291px;
+    width: 1200px;
     background-color: var(--white);
 }
 
+.advantages ul{
+    padding-top: 47px;
+    margin: 0px;
+}
 
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+.number{
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+}
 
+.deserves-more{
+    margin-top: -16px;
+}
+
+.we-offer-hotels{
+    margin-top: -16px;
+}
+.img-catalog{
+    margin-left:73px;
+}
+
+.hotel-more, .price-book{
+    width: 110px;
+    text-align: left;
+    height: 60px;
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: baseline;
+    padding-left: 29px;
+}
+
+.name-of-hotel{
+    margin-left: 29px;
+    margin-top: 31px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    font-family: inherit;
+}
