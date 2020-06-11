@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotels</title>
-    <link rel="stylesheet" href="css/normalize .css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="page-body">
@@ -23,9 +23,9 @@
      </div>
    </header>
 
-     
-   <section>
-   <div class="filter">
+
+   <section class="section-filter">
+    <div class="filter">
     <form action="https://echo.htmlacademy.ru" method="post" >
      <fieldset>
      <legend> инфраструктура:</legend>
@@ -50,23 +50,24 @@
         <input type="checkbox" name="motel" id="motel">
         <label for="motel">мотель</label><br>
         
-        <input type="checkbox"name="apartments" id="apartments">
+        <input type="checkbox" name="apartments" id="apartments">
         <label for="apartments">апартаменты</label>
-        
-      </fieldset>
-    </div>
-     
+   
+    </fieldset>   
+  </div>
     <fieldset class="price-filter">
       <legend>стоимость в сутки (Р):</legend>
       <div>
        <span>от 0</span>
        <span>до 3000</span>
-      </div>
       <input type="range" min="0" max="3000" step="1" name="price">
     </fieldset>
+  
    <button type="submit" class="button-show">показать</button>
-  </form>
+  
  </section>
+</form>
+
 
     <section>
       <div class="hotels">
@@ -82,67 +83,71 @@
      
     </section>
 
-  <div class="choose-hotel">
-    <section>
-         <h1 class="name-of-hotel">amara resort & spa</h1>
-         <img src="img/hotel-1.png" width="135" height="90" alt="AMARA RESORT & SPA" class="img-catalog">
-        
+  <ul class="choose-hotel">
+    <li>
+      <img src="img/hotel-1.png" alt="AMARA RESORT & SPA" class="img-catalog">
+      <div class="name-hotel">
+        <a href="#" class="name-of-hotel">
+          <h3>amara resort & spa</h3>
+        </a>
         <div class="hotel-more">
           <span class="description">гостиница</span>  
           <a href="#" class="more">Подробнее</a>
         </div>
-
         <div class="price-book">
           <span class="description">от 4000 р.</span> 
           <a href="#" class="book">Забронировать</a>
         </div>
-      
-        <div class="rating">
+      </div>
+      <div class="rating">
+         <span></span>
          <span>рейтинг: 8,5</span>
-        </div>
-        <span></span>
-     </section>
-
-     <section>
-       <h1 class="name-of-hotel">desert quail inn</h1>
-       <img src="img/hotel-2.png" width="135" height="90" alt="DESERT QUAIL INN" class="img-catalog">
-         
-       <div class="hotel-more">
+      </div>
+    </li>
+        
+    <li>
+      <img src="img/hotel-2.png" width="135" height="90" alt="DESERT QUAIL INN" class="img-catalog">
+      <div class="name-hotel">
+        <a href="#" class="name-of-hotel">
+          <h3>desert quail inn</h3>
+        </a>
+        <div class="hotel-more">
          <span class="description">мотель</span> 
          <a href="#" class="more">Подробнее</a>
        </div>
-
-        <div class="price-book">
+       <div class="price-book">
          <span class="description">от 3000 р.</span>
          <a href="#" class="book">Забронировать</a>
-        </div>
-      
-       <div class="rating">
-       <span>рейтинг: 8,9</span>
+       </div>
       </div>
-       <span></span>
-    </section>
+      <div class="rating">
+        <span></span>
+        <span>рейтинг: 8,5</span>
+     </div>
+   </li>
 
-    <section>
-       <h1 class="name-of-hotel">villas at poco diablo</h1>
-       <img src="img/hotel-3.png" width="135" height="90" alt="VILLAS AT POCO DIABLO" class="img-catalog">
+   <li>
+     <img src="img/hotel-3.png" width="135" height="90" alt="VILLAS AT POCO DIABLO" class="img-catalog">
+     <div class="name-hotel">
+      <a href="#" class="name-of-hotel">
+        <h3>villas at poco diablo</h3>
+      </a>
+      <div class="hotel-more">
+        <span class="description">апартаменты</span>  
+        <a href="#" class="more">Подробнее</a>
+      </div>
+      <div class="price-book">
+        <span class="description">от 2000 р.</span>
+        <a href="#" class="book">Забронировать</a>
+      </div>
+     </div>
+      <div class="rating">
+        <span></span>
+        <span>рейтинг: 8,5</span>
+     </div>
+   </li>
+ </ul>
       
-       <div class="hotel-more">
-         <span class="description">апартаменты</span>  
-         <a href="#" class="more">Подробнее</a>
-        </div>
-
-       <div class="price-book">
-         <span class="description">от 2000 р.</span>
-         <a href="#" class="book">Забронировать</a>
-       </div>
-       
-       <div class="rating">
-        <span >рейтинг: 9,2</span>
-       </div>
-       <span></span>
-    </section>
-  </div>
   <footer class="main-footer">
     <div class="footer-container">
       <section class="section-for-contacts">
@@ -152,8 +157,8 @@
         </p>
       </section>
       <section class="section-for-socials">
+        <div class="social-icons">
          <ul class="socials">
-          <div class="social-icons">
             <li> 
               <a href="#"> <img src="img/twitter.svg" width="17" height="16" alt="Твиттер"> </a>
             </li>
@@ -167,8 +172,8 @@
              <li> 
               <a href="#"> <img src="img/youtube.svg" width="20" height="16" alt="Твиттер"> </a>
             </li>
-          </div>
          </ul>
+         </div>
       </section>
       
         <p class="website">

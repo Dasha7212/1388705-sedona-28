@@ -28,16 +28,10 @@
     --light-black: #333333; 
     --for-current-page: #766357;
     --for-rating: #666666;
+    --for-line-catalog: #e5e5e5;
 }
 .page{
     height: 100%;
-}
-
-.page-body{
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    align-content: flex-start;
 }
 
 .main-header{
@@ -80,7 +74,6 @@ img{
 }
 
 .navigation-item{
-    margin-left: 73px;
     list-style: none;
     outline: 5px solid pink;
     outline-offset: -5px;
@@ -92,11 +85,8 @@ img{
     color: var(--black);
 }
 
-
-
 .main-logo{
     width: 1200px;
-    height: 509px; 
     background-image: url('../img/background-photo-1.jpg');
     background-position: center;
     max-width: 100%;
@@ -106,6 +96,7 @@ img{
 .welcome-logo{
     text-align: center;
     padding-top: 77px;
+    margin-left: 351px;
 }
 
 .figure{
@@ -115,13 +106,13 @@ img{
 
 .information{
     text-align: center;
-    background-color: var(--white);
 }
 
 .real-town{
     outline: 5px solid greenyellow;
     outline-offset: -5px;
-    margin-top: 47px;
+    margin: 0 auto;
+    padding-top: 40px;
 }
 
 .its-own-life{
@@ -129,21 +120,17 @@ img{
 }
 
  .is-not-attraction{
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 23px;
     font-size: 14px;
     text-align: center;
     margin-bottom: 54px;
 } 
-.real-town{
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 51px;
-}
 
 .real-town h2 {
     max-width: 270px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .real-town-section img{
@@ -174,16 +161,25 @@ img{
 .food{
     width: 400px;
     justify-self: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 82px;
 }
 
 .house{
     width: 400px;
     justify-self: start;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-bottom: 82px;
 }
 
 .souvenirs{
     width: 400px;
     justify-self: end;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-bottom: 82px;
 }
 
 .area{
@@ -219,7 +215,7 @@ img{
 
 .bridge p{
     font-size: 14px;
-line-height: 21px;
+    line-height: 21px;
 
 }
 
@@ -235,16 +231,16 @@ line-height: 21px;
 .advantages{
     outline: 5px solid violet;
     outline-offset: -5px;
-    height: 256px;
+    background-color: var(--grey);
+    text-align: center; 
+    width: 1200px;
 }
 
 .advantages li{
     outline: 5px solid purple;
     outline-offset: -5px;
-}
-
-.advantages ul{
-    display: flex;
+    padding-top: 47px;
+    padding-bottom: 54px;
 }
 
 .town-sedona{
@@ -253,7 +249,15 @@ line-height: 21px;
     line-height: 26px;
 }
 
+.p-for-advantages{
+    padding-left: 60px;
+    padding-right: 60px;
+}
 
+.p-for-advantages-drive{
+    padding-left: 40px;
+    padding-right: 40px;
+}
 .reasons{
     font-size: 14px;
     line-height: 26px;
@@ -297,7 +301,6 @@ line-height: 21px;
     font: inherit;
     font-weight: bold;
     width: 568px;
-    height: 395px;
     margin: 0 auto;
     padding-top: 55px;
 }
@@ -443,9 +446,9 @@ line-height: 21px;
 }
 
 .rating{
-    margin-left: 1017px;
+    margin-left: auto;
     margin-right: 73px;
-    margin-bottom: 31px;
+    margin-top: 93px;
     background-color: var(--grey);
     color: var(--for-rating);
     width: 110px;
@@ -489,16 +492,12 @@ line-height: 21px;
 .facilities{
     background-color: var(--white);
     text-align: center;
-    height: 330px;
 }
 
 .facilities li, .advantages li{
     list-style: none;
 }
 
-.paragraphs{
-    margin-top: -15px;
-}
 .facilities li{
     padding-top: 68px;
 }
@@ -523,19 +522,13 @@ line-height: 21px;
     margin-top: 28px;
 }
 
-.advantages{
-    background-color: var(--grey);
-    text-align: center; 
-    width: 1200px;
-}
-
 .map{
     width: 1199px;
     height: 594px; 
 }
 
 .filter{
-    width: 1200px;
+    width: 100%;
     height: 217px;
     background-image: url("../img/backgroundbackground-2-photo.png");
 }
@@ -611,19 +604,18 @@ line-height: 21px;
 .main-footer{
     color: var(--black);
     background-color: var(--white);
-    width: 100%;
     outline: 5px solid red;
     outline-offset: -5px;
 }
 
 .main-footer .footer-container{
+    padding-left: 117px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .section-for-contacts{
     text-align: left;
-    margin-left: 117px;
     width: 251px;
     line-height: 9px;
 }
@@ -651,8 +643,6 @@ line-height: 21px;
 .choose-hotel{
     outline: 5px solid salmon;
     outline-offset: -5px;
-    display: flex;
-    flex-direction: column;
     background-color: var(--white);
 }
 
@@ -672,8 +662,8 @@ line-height: 21px;
 }
 
 .advantages ul{
-    padding-top: 47px;
     margin: 0px;
+    display: flex;
 }
 
 ul{
@@ -690,15 +680,11 @@ ul{
     margin-top: -16px;
 }
 
-.we-offer-hotels{
-    margin-top: -16px;
-}
 .img-catalog{
     margin-left:73px;
 }
 
 .hotel-more, .price-book{
-    width: 110px;
     text-align: left;
     height: 60px;
     display: inline-block;
@@ -708,10 +694,41 @@ ul{
 }
 
 .name-of-hotel{
-    margin-left: 29px;
-    margin-top: 31px;
+    color: var(--black);
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     font-family: inherit;
 }
+
+.p-for-bridge{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+li{
+   list-style: none;
+}
+
+.choose-hotel li{
+    display: flex;
+    border-bottom: 1px solid var(--for-line-catalog);
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+    padding-right: 72px;
+
+}
+
+.choose-hotel li:first-child{
+    border-top: 1px solid var(--for-line-catalog);
+}
+
+.name-hotel{
+    margin-left: 29px;
+}
+
+ .section-filter{
+    display: flex;
+} 
