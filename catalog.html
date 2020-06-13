@@ -30,7 +30,7 @@
      <fieldset>
      <legend> инфраструктура:</legend>
      
-     <p class="p-filter">
+     <p class="p-filter first">
       <input type="checkbox" name="pool" id="pool">
       <label for="pool">бассейн</label>
      </p>
@@ -47,10 +47,10 @@
        
      </fieldset>
 
-     <fieldset>
+     <fieldset class="type-of-life">
       <legend> тип жилья:</legend>
       
-      <p class="p-filter">
+      <p class="p-filter first">
         <input type="checkbox" name="hotel" id="hotel">
         <label for="hotel">гостиница</label>
       </p>
@@ -60,7 +60,7 @@
         <label for="motel">мотель</label>
       </p>
         
-      <p class="p-filter">
+      <p class="p-filter last">
         <input type="checkbox" name="apartments" id="apartments">
         <label for="apartments">апартаменты</label>
       </p>
@@ -68,7 +68,7 @@
     </fieldset>   
    
     <fieldset class="price-filter">
-      <legend>стоимость в сутки (Р):</legend>
+      <legend class="price-a-day">стоимость в сутки (Р):</legend>
       <div class="price-container">
        <span class="min-price">от 0</span>
        <span class="max-price">до 3000</span>
@@ -91,8 +91,8 @@
        <p>сортировка:</p>
        <ul>
          <li><a href="" class="price">по цене:</a></li>
-         <li><a href="" class="type-rate">по типу:</a></li>
-         <li><a href="" class="type-rate">по рейтингу:</a></li>
+         <li><a href="" class="type">по типу:</a></li>
+         <li><a href="" class="rate">по рейтингу:</a></li>
        </ul>
        <a href=""></a>
        <a href=""></a>
@@ -101,7 +101,7 @@
 
   <ul class="choose-hotel">
     <li>
-      <img src="img/hotel-1.png" alt="AMARA RESORT & SPA" class="img-catalog">
+      <img src="img/hotel-1.png" width="135" height="90" alt="AMARA RESORT & SPA" class="img-catalog">
       <div class="name-hotel">
         <a href="#" class="name-of-hotel">
           <h3>amara resort & spa</h3>
