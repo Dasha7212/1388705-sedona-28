@@ -73,26 +73,33 @@ img{
 }
 
 .navigation-item{
-    outline-offset: -5px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 72px;
-    padding-right: 72px;
 }
 
 .information-nav{
-    padding-right: 134px;
+    padding-right: 137px;
+    width: 300px;
+    text-align: right;
 }
 
 .photo-nav{
-    padding-right: 224px;
-   
+    padding-right: 147px;
+    width: 300px;
+    text-align: right;
 }
 
 .map-nav{
-    padding-right: 147px;
-    padding-left: 147px; 
+    width: 300px;
+    text-align: left;
+    padding-left: 133px;
+}
+
+.hotel-nav{
+    width: 300px;
+    text-align: left;
+    padding-left: 127px;
 }
 
 .logo-sedona{
@@ -312,18 +319,19 @@ img{
     width: 568px;
 }
 
+
 .dates {
-    border: none;
-    width: 296px;
-    padding: 6px 0 6px 12px;
-    height: 38px;
-    background-color: var(--light-grey);
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 26px;
-    font: inherit;
-    margin-left: 12px;
+     border: none;
+     width: 308px;
+     padding: 6px 0 6px 12px;
+     height: 38px;
+     background-color: var(--light-grey);
+     font-weight: bold;
+     font-size: 14px;
+     line-height: 26px;
+     font: inherit;  
 }
+
 
 .dates:hover{
     background-color: var(--date-for-hover);
@@ -478,10 +486,14 @@ img{
     line-height: 26px;
 }
 
-.social-icons{
-    min-width: 46px;
-    min-height: 48px;
+.social-icons {
+    display: block;
+    width: 46px;
+    height: 48px;
+    fill: #fff;
     background-color: var(--blue);
+    position: relative;
+    margin-right: 6px;
 }
 
 .socials{
@@ -781,24 +793,16 @@ img{
     margin-bottom: 36px;
 }
 
-.twitter-icon{
+.social-icons img {
     position: relative;
-    top: 17px;
-    left: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.twitter-icon:active{
-    opacity: 0.3;
+.social-icons:active img{
+    opacity: .3;
 }
-
-.youtube-icon:active{
-    opacity: 0.3;
-}
-
-.facebook-icon:active{
-    opacity: 0.3;
-}
-
 
 .social-icons:hover{
     background-color: var(--dark-blue-for-hover);
@@ -825,30 +829,6 @@ img{
 .academy-logo:active{
     fill: var(--black-for-html-academy);
     fill-opacity: 0.9;
-}
-
-
-
-.facebook-icon{
-    position: relative;
-    top: 13px;
-    left: 17px;
-  
-}
-
-.youtube-icon{
-    position: relative;
-    top: 16px;
-    left: 13px;
-   
-}
-
-.social-t{
-    margin-right: 6px;
-}
-
-.social-f{
-    margin-right: 6px;
 }
 
 .main-footer{
