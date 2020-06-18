@@ -38,6 +38,7 @@
     --date-for-hover: #EBEBEB;
     --grey-for-up-down: #CACACA;
     --toggle: #ababab;
+    --for-checkbox: #6A6A6A;
 }
 .page{
     height: 100%;
@@ -804,7 +805,7 @@ img{
     color: var(--white);
 }
 
-.filter label{
+.filter span{
     margin-bottom: 25px;
     font: inherit;
     font-size: 14px;
@@ -886,6 +887,54 @@ img{
     position: absolute;
     top: 11px;
     left: 0;
+    cursor: pointer;
+}
+
+.toggle-min:hover{
+    width: 23px;
+    height: 21px;
+    border: 8px solid var(--white);
+    background-color: var(--toggle);
+    padding: 2px 2px;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #ababab;
+    position: absolute;
+    top: 11px;
+    left: 0;
+    cursor: pointer;
+}
+
+.information:hover{
+    color: var(--blue);
+}
+
+.information:active{
+    color: var(--black);
+    opacity: 0.3;
+}
+
+
+.p-filter svg{
+    position: relative;
+    top: 5px;
+    fill: var(--white);
+}
+
+.p-filter svg:active{
+    fill: var(--for-checkbox);
+}
+
+.toggle-max:hover{
+    width: 23px;
+    height: 21px;
+    border: 8px solid var(--white);
+    background-color: var(--toggle);
+    padding: 2px 2px;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #ababab;
+    position: absolute;
+    top: 11px;
+    left: 290;
     cursor: pointer;
 }
 
@@ -1182,9 +1231,9 @@ li{
 }
 
 .first{
-    padding-top: 24px;
+    padding-top: 15px;
 }
 
 .p-filter:not(.first){
-    padding-top: 25px;
+    padding-top: 16px;
 }
