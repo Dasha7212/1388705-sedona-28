@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/normalize .css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="page-body">
@@ -14,10 +14,10 @@
        <nav class="navigation">
           <img src="img/logo-sedona.svg" width="138" height="70" alt= "логотип Седона" class="logo-sedona">
           <ul class="navigation-item">
-             <li><a href="" class="information-nav">информация</a></li>
-             <li><a href="" class="photo-nav">фото и видео</a></li>
-             <li><a href="" class="map-nav">карта штата</a></li>
-             <li><a href="catalog.html" class="hotel-nav">гостиницы</a></li>
+             <li class="information-nav"><a href="#">информация</a></li>
+             <li class="photo-nav"><a href="#">фото и видео</a></li>
+             <li class="map-nav"><a href="#">карта штата</a></li>
+             <li class="hotel-nav"><a href="catalog.html">гостиницы</a></li>
           </ul>
         </nav>
       </div>
@@ -32,8 +32,8 @@
     
     <section class="information">
         <h2 class="town-sedona">
-        <p>седона - небольшой городок в аризоне,</p>
-        <p class="deserves-more">заслуживающий большего!</p>
+        седона - небольшой городок в аризоне,
+        <span class="deserves-more">заслуживающий большего!</span>
         </h2>
         <p class="reasons">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
     </section>
@@ -54,19 +54,19 @@
     <section class="facilities">
          <ul>
            <li class="house">
-            <img src="img/icon-1.svg" width="75" height="72" alt="Иконка дома">
+             
             <h2>жильё</h2>
             <p class="paragraphs">рекомендуем пожить в настоящем
                                   мотеле, всё как в кино!</p>
            </li>
            <li class="food">
-            <img src="img/icon-3.svg" width="75" height="70" alt="Иконка еды">
+            
             <h2>еда</h2>
             <p class="paragraphs">всегда заказывайте фирменный бургер,
                                    вы не разочаруетесь!</p>
            </li>
            <li class="souvenirs">
-            <img src="img/icon-2.svg"  width="64" height="77" alt="Иконка подарка">
+            
             <h2>сувениры</h2>
             <p class="paragraphs">не только китайского, но и местного
                                     производства!</p>
@@ -141,29 +141,29 @@
           <div class="adults-and-children">
           <div class="adults-container">
             <label for="adults" class="adults-label">Взрослые:</label>
-            <button type="button" class="minus" >
-              <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                <rect width="12" height="3" fill="#A9A9A9"/>
+            <button type="button" class="button-minus">
+              <svg class="minus" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                <rect width="12" height="3"/>
               </svg>
             </button>
-            <input type="number" min="1" step="1" id="adults" value="2" name="amount-of-adults"class="people" >
-            <button type="button" class="union">
-              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+            <input type="number" min="1" step="1" id="adults" value="2" name="amount-of-adults" class="people" >
+            <button type="button"  class="button-union">
+              <svg class="union" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="union" fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
               </svg>
             </button>
           </div>
           <div class="children-container">
             <label for="children" class="children-label">Дети:</label>
-            <button type="button" class="minus">
-              <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="12" height="3" fill="#A9A9A9"/>
+            <button type="button" class="button-minus">
+              <svg class="minus" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="12" height="3"/>
               </svg>
             </button>
             <input type="number" min="0" step="1" id="children" value="0" name="amount-of-children" class="people children">
-            <button type="button" class="union">
-              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+            <button type="button" class="button-union">
+              <svg class="union" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="union" fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
               </svg>
             </button>
           </div>  
@@ -193,28 +193,23 @@
          <ul class="socials">
           
           <li> 
-            <div class="social-icons social-t">
-              <a href="#">
-               <img src="img/twitter.svg" width="17" height="16" alt="Твиттер" class="twitter-icon"> 
-              </a> 
-            </div>
+            <a href="#" class="social-icons">
+              <img src="img/twitter.svg" width="17" height="16" alt="Твиттер"> 
+            </a> 
           </li>
           
          
           <li> 
-            <div class="social-icons social-f">
-              <a href="#">
-                 <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook" class="facebook-icon"> 
-              </a>
-            </div>
+            <a href="#" class="social-icons">
+              <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"> 
+            </a>
           </li>
          
          
           <li> 
-            <a href="#" class="social-icons social-y"> 
-               <img src="img/youtube.svg" width="20" height="16" alt="Youtube" class="youtube-icon"> 
-              </a>
-            
+            <a href="#" class="social-icons"> 
+              <img src="img/youtube.svg" width="20" height="16" alt="Youtube"> 
+            </a>
           </li>
           
          </ul>

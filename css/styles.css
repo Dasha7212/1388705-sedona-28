@@ -36,6 +36,8 @@
     --grey-for-calendar-icon:  #A9A9A9;
     --black-for-html-academy: #231F20;
     --date-for-hover: #EBEBEB;
+    --grey-for-up-down: #CACACA;
+    --toggle: #ababab;
 }
 .page{
     height: 100%;
@@ -96,6 +98,10 @@ img{
     padding-left: 133px;
 }
 
+.current-page{
+    color: var(--for-current-page);
+}
+
 .hotel-nav{
     width: 300px;
     text-align: left;
@@ -110,6 +116,9 @@ img{
 
 .navigation-item a{
     color: var(--black);
+}
+
+.navigation-item li{
     display: block;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -240,10 +249,34 @@ img{
     padding-bottom: 54px;
 }
 
+.food{
+   background-image: url(../img/icon-3.svg);
+   background-size: 75px 70px;
+   background-position: center 69px;
+   background-repeat: no-repeat;
+}
+
+.souvenirs{
+    background-image: url(../img/icon-2.svg);
+    background-size: 75px 70px;
+    background-position: center 69px;
+    background-repeat: no-repeat;
+}
+
+.house{
+    background-image: url(../img/icon-1.svg);
+    background-size: 75px 70px;
+    background-position: center 69px;
+    background-repeat: no-repeat;
+}
+
 .town-sedona{
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+    text-align: center;
+    margin: 41px auto;
+    width: 500px;
 }
 
 .p-for-advantages{
@@ -275,7 +308,7 @@ img{
     text-align: center;
 }
 .search-hotels{
-    margin-left: 328px;
+    margin-left: 326px;
     font: inherit;
     text-align: center;
     width: 568px;
@@ -356,6 +389,8 @@ img{
     padding-left: 20px;
 }
 
+
+
  .search{
     width: 458px;
     height: 58px;
@@ -427,37 +462,45 @@ img{
     border: none;
 }
 
-.minus{
+.button-minus{
     position: relative;
     left: 30px;
-    fill: var(--grey-for-calendar-icon);
-     bottom: 3px;
     border: none;
+    bottom: 3px;
+}
+
+.minus{
+   
+    fill: var(--grey-for-calendar-icon);
+     
+    
 }
 
 .minus:hover{
-    stroke: var(--black);
+    fill: var(--black);
     border: none;
 }
 
 .minus:active{
-    stroke: var(--blue);
+    fill: var(--blue);
     border: none;
 }
 
-.union{
+.button-union{
     position: relative;
     right: 27px;
     border: none;
 }
 
+
+
 .union:hover{
-    stroke: var(--black);
+    fill: var(--black);
     border: none;
 }
 
 .union:active{
-    stroke: var(--blue);
+    fill: var(--blue);
     border: none;
 }
 
@@ -544,8 +587,24 @@ img{
     font-size: 12px;
     line-height: 18px;
     color: var(--black);
+    opacity: 0.3;
     border-bottom: 1px dashed var(--blue);
     padding-top: 2px;
+}
+
+.type:hover,
+.rate:hover{
+    color: var(--blue);
+    border-bottom: 1px dashed var(--blue);
+    opacity: 1.0;
+
+}
+
+.type:active,
+.rate:active{
+    color: var(--black);
+    opacity: 1.0;
+    border: none;
 }
 
 .rate{
@@ -555,6 +614,7 @@ img{
     border-bottom: 1px dashed var(--blue);
     padding-top: 3px;
     padding-left: 1px;
+    opacity: 0.3;
 }
 
 .hotels span{
@@ -571,7 +631,7 @@ img{
     margin-top: 15px;
     display: block;
     width: 110px;
-    height: 27px;
+    padding: 3px 0;
     background-color: var(--blue);
 }
 
@@ -593,7 +653,7 @@ img{
     margin-top: 15px;
     display: block;
     width: 142px;
-    height: 27px;
+    padding: 3px 0;
     background-color: var(--brown);
 }
 
@@ -612,18 +672,34 @@ img{
     margin-left: auto;
     width: 110px;
     height: 91px;
-    display: flex;
+     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    
+    align-items: flex-end;  
 }
+
+.span-for-star{
+    height: 17px;
+    width: 18px;
+    display:inline-block;
+    background-image: url(../img/star.svg);
+}
+
+.page-wrapper{
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+
+   
+  
+
 
 .rating {
     background-color: var(--grey);
     color: var(--for-rating);
     width: 110px;
-    height: 27px; 
     margin-top: 40px;
+    text-align: center;
+    padding: 3px 3px;
     font-size: 14px;
 }
 
@@ -666,6 +742,7 @@ img{
 .facilities{
     background-color: var(--white);
     text-align: center;
+    height: 330px;
 }
 
 .facilities li, .advantages li{
@@ -673,7 +750,7 @@ img{
 }
 
 .facilities li{
-    padding-top: 68px;
+    padding-top: 146px;
 }
 
 .facilities h2, .advantages h2{
@@ -691,9 +768,12 @@ img{
     color: var(--light-black);
 }
 
+.facilities p{
+    margin: 0;
+}
+
 .facilities h2{
     margin-bottom: 25px;
-    margin-top: 28px;
 }
 
 .map{
@@ -708,6 +788,7 @@ img{
     padding-left: 72px;
     padding-right: 73px;
     padding-top: 26px;
+    padding-bottom: 32.5px;
     
 }
 
@@ -737,6 +818,7 @@ img{
     padding-bottom: 0px;
     padding-right: 0px;
     padding-left: 0px;
+    height: 158px;
 }
 .type-of-life{
     padding-left: 117px;
@@ -744,6 +826,7 @@ img{
     padding-top: 0px;
     padding-bottom: 0px;
     padding-right: 0px;
+    height: 158px;
 }
 
 .price-container{
@@ -761,12 +844,91 @@ img{
     font:inherit;
     font-size: 14px;
     line-height: 21px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+
+.range-price{
+   position: relative;
+   height: 53px;
+   background-color: transparent;
+   padding-top: 20px;
+}
+
+.range-price .scale{
+    height: 2px;
+    background-color: var(--black);
+    opacity: 0.3;
+}
+
+.range-price .bar{
+    width: 80%;
+    height: 2px;
+    background-color: var(--white);
+}
+
+.range-price .toggle-min{
+  left: 0;
+}
+
+.range-price .toggle-max{
+    left: 290px;
+}
+.toggle{
+    width: 4px;
+    height: 4px;
+    border: 8px solid var(--white);
+    background-color: var(--toggle);
+    padding: 2px 2px;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #ababab;
+    position: absolute;
+    top: 11px;
+    left: 0;
+    cursor: pointer;
+}
+
+.price-container input{
+    width: 53px;
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    font: inherit;
+    font-size: 14px;
 }
 
 .price-filter legend{
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
+}
+.icon-up{
+    margin-left: 440px;
+    margin-top: 10px;
+    fill: var(--grey-for-up-down);
+}
+
+.icon-up:hover{
+    fill: var(--black);
+}
+
+.icon-down:hover{
+    fill: var(--black);
+}
+
+.icon-up:active{
+    fill: var(--blue);
+}
+
+.icon-down:active{
+    fill: var(--blue);
+}
+
+.icon-down{
+    margin-left: 12px;
+    margin-top: 10px;
+    fill: var(--grey-for-up-down);
 }
 
 .button-show{
@@ -779,8 +941,15 @@ img{
     color: var(--white);
     text-transform: uppercase;
     font: inherit;
-    margin-top: 33px;
     margin-left: 85px;
+    font-stretch: condensed;
+}
+
+.button-show:hover{
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    color: var(--black);
+
 }
 .contacts{
     padding-top: 4px;
@@ -910,7 +1079,7 @@ ul{
     text-align: left;
     display: inline-block;
     margin-right: 6px;
-    vertical-align: baseline;
+    vertical-align: bottom;
 }
 
 .name-of-hotel{
@@ -964,6 +1133,7 @@ li{
 
  .section-filter{
     background-image: url("../img/backgroundbackground-2-photo.png");
+    background-size: cover;
 } 
 
 .min-price{
@@ -980,10 +1150,6 @@ li{
     margin-right: 36px;
     margin-top: 6px;
     margin-bottom: 8px;
-}
-
-.range-price{
-    padding-top: 20px;
 }
 
 .hotels{
