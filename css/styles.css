@@ -805,12 +805,14 @@ img{
     color: var(--white);
 }
 
-.filter span{
+.filter label:not(.max-price):not(.min-price){
+    position: relative;
     margin-bottom: 25px;
     font: inherit;
     font-size: 14px;
     line-height: 21px;
     color: var(--white);
+    left: 29px;
 }
 
 .filter fieldset:not(.type-of-life){
@@ -913,16 +915,39 @@ img{
     opacity: 0.3;
 }
 
-
-.p-filter svg{
-    position: relative;
-    top: 5px;
-    fill: var(--white);
+.filter input + label::before{
+  content: "";
+  position: absolute;
+  left: -52px;
+  top: -2px;
+  width: 30px;
+  height: 30px;
+ 
 }
 
-.p-filter svg:active{
-    fill: var(--for-checkbox);
-}
+.filter input:checked + label::after{
+  width: 30px;
+  height: 30px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -52px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  }
+
+  /* .filter input:checked + label::after{
+    content: "";
+    position: absolute;
+    top: 115px;
+    width: 23px;
+    height: 23px;
+    border: 2px solid var(--white);
+    background-color: green;
+    left: 144px;
+  } */
+
 
 .toggle-max:hover{
     width: 23px;
@@ -1231,9 +1256,9 @@ li{
 }
 
 .first{
-    padding-top: 15px;
+    padding-top: 24px;
 }
 
 .p-filter:not(.first){
-    padding-top: 16px;
+    padding-top: 25px;
 }
