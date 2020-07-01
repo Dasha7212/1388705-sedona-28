@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="page-body">
     <div class="page-wrapper">
@@ -22,9 +22,9 @@
               <li class="information-nav">
                 <a href="#" class="information">информация</a>
               </li>
-              <li class="photo-nav"><a href="#">фото и видео</a></li>
-              <li class="map-nav"><a href="#">карта штата</a></li>
-              <li class="hotel-nav"><a href="catalog.html">гостиницы</a></li>
+              <li class="photo-nav"><a href="#" class="photo">фото и видео</a></li>
+              <li class="map-nav"><a href="#" class="map-sedona">карта штата</a></li>
+              <li class="hotel-nav"><a href="catalog.html" class="hotels-sedona">гостиницы</a></li>
             </ul>
           </nav>
         </div>
@@ -48,7 +48,7 @@
           />
         </div>
 
-        <section class="information">
+        <section class="information-main">
           <h2 class="town-sedona">
             Седона — небольшой городок в Аризоне,
             <span class="deserves-more">заслуживающий большего!</span>
@@ -162,8 +162,9 @@
           </button>
         </section>
 
-        <div class="blank">
-          <form action="https://echo.htmlacademy.ru" method="post">
+      <div class="parent-for-blank">
+        <div class="blank  modal-show">
+          <form action="https://echo.htmlacademy.ru" method="post"> 
             <div class="date-arrive-container">
               <label for="arrive-date">Дата заезда:</label>
               <input
@@ -306,6 +307,7 @@
             <button type="submit" class="search">Найти</button>
           </form>
         </div>
+      </div>
 
         <section>
           <div class="map">
@@ -393,5 +395,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

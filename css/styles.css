@@ -43,6 +43,20 @@
     --for-checkbox: #6a6a6a;
   }
   
+    /* @keyframes down {
+      from {
+        -webkit-transform: translate(-50%, -400px);
+        transform: translate(-50%, -400px);
+      }
+    
+      to {
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+      }
+   
+  }   */
+
+  
   .page {
     height: 100%;
   }
@@ -95,6 +109,24 @@
     letter-spacing: -1.4px;
     margin-left: -12px;
   }
+
+  .information:hover, .information:focus,
+  .photo:hover, .photo:focus,
+  .hotels-sedona:hover, .hotels-sedona:focus,
+  .map-sedona:hover,  .map-sedona:focus {
+    color: var(--blue);
+  }
+
+  
+  
+  .information:active,
+  .photo:active, 
+  .map-sedona:active, 
+  .hotels-sedona:active {
+    color: var(--black);
+    opacity: 0.3;
+  }
+  
   
   .map-nav {
     width: 240px;
@@ -132,6 +164,7 @@
   
   .main-logo {
     width: 1200px;
+    background-color: var(--blue);
     background-image: url(../img/background-photo-1.jpg);
     background-position: center;
     max-width: 100%;
@@ -148,7 +181,7 @@
     margin-bottom: -63px;
   }
   
-  .information {
+  .information-main {
     text-align: center;
   }
   
@@ -340,11 +373,10 @@
     margin-left: 318px;
     font: inherit;
     text-align: center;
-    width: 568px;
+    min-width: 568px;
     height: 86px;
     font-weight: bold;
     font-size: 21px;
-    letter-spacing: -1.8px;
     padding-top: 4px;
     background-color: var(--brown);
     color: var(--white);
@@ -352,9 +384,11 @@
     border: none;
     line-height: 26px;
     margin-top: 28px;
+    z-index: 10;
+    display: inline-block;
   }
   
-  .search-hotels:hover {
+  .search-hotels:hover, .search-hotels:focus {
     background-color: var(--dark-brown-for-hover);
     border: none;
   }
@@ -376,8 +410,18 @@
     font-weight: bold;
     padding: 55px 54px 41px 54px;
     position: absolute;
-    left: 350px;
+    left: 0px;
     width: 568px;
+    z-index: 3;
+  }
+
+  .parent-for-blank {
+    width: 568px;
+    z-index: 5;
+    position: absolute;
+    left: 350px;
+    overflow: hidden; 
+    height: 383px;
   }
   
   .dates {
@@ -394,6 +438,16 @@
     text-transform: uppercase;
     margin-top: -2px;
     font-stretch: condensed;
+  }
+
+  .modal-show {
+    transform: translate(0, 0);
+    transition: all 2s ;
+  }
+
+  .modal {
+    transform: translate( 0, -383px);
+    transition: all 2s ;
   }
   
   .dates:hover {
@@ -420,8 +474,9 @@
   }
   
   .search {
-    width: 458px;
+    min-width: 458px;
     height: 58px;
+    display: inline-block;
     background-color: var(--blue);
     color: var(--white);
     font: inherit;
@@ -477,7 +532,6 @@
   }
   
   .bridge h2 {
-    letter-spacing: -1.8px;
     margin-top: 21px;
     font-size: 21px;
   }
@@ -492,10 +546,12 @@
   .calendar {
     position: relative;
     fill: var(--grey-for-calendar-icon);
+    background-color: var(--light-grey);
     border: none;
     width: 38px;
     height: 38px;
     right: 2px;
+    top: -1px;
   }
   
   .adults-label {
@@ -503,7 +559,7 @@
     margin-right: 9px;
   }
   
-  .calendar:hover {
+  .calendar:hover, .calendar:focus {
     fill: var(--black);
     border: none;
   }
@@ -522,9 +578,10 @@
   
   .minus {
     fill: var(--grey-for-calendar-icon);
+    background-color: var(--light-grey);
   }
   
-  .minus:hover {
+  .minus:hover, .minus:focus {
     fill: var(--black);
     border: none;
   }
@@ -545,9 +602,11 @@
     position: relative;
     left: 195px;
     border: none;
-    height: 36px;
+    height: 37px;
     z-index: 100;
     bottom: 37px;
+    top: -37.5px;
+    background-color: var(--light-grey);
   }
   
   .children-container {
@@ -558,12 +617,14 @@
     position: relative;
     left: 150px;
     border: none;
-    height: 36px;
+    height: 37px;
     z-index: 100;
     bottom: 37px;
+    top: -37.5px;
+    background-color: var(--light-grey);
   }
   
-  .union:hover {
+  .union:hover, .union:focus {
     fill: var(--black);
     border: none;
   }
@@ -573,7 +634,7 @@
     border: none;
   }
   
-  .search:hover {
+  .search:hover, .search:focus {
     background-color: var(--dark-blue-for-hover);
     border: none;
   }
@@ -664,8 +725,8 @@
     padding-bottom: 2px;
   }
   
-  .type:hover,
-  .rate:hover {
+  .type:hover, .type:focus,
+  .rate:hover,.rate:focus {
     color: var(--blue);
     border-bottom: 1px dashed var(--blue);
     opacity: 1;
@@ -704,13 +765,13 @@
     text-align: center;
     margin-top: 17px;
     display: block;
-    width: 110px;
+    min-width: 110px;
     padding: 3px 17px;
     background-color: var(--blue);
     letter-spacing: -1px;
   }
   
-  .more:hover {
+  .more:hover, .more:focus {
     background-color: var(--dark-blue-for-hover);
     border: none;
   }
@@ -729,13 +790,13 @@
     margin-left: -5px;
     margin-right: px;
     display: block;
-    width: 142px;
+    min-width: 142px;
     padding: 3px 0;
     background-color: var(--brown);
     letter-spacing: -1px;
   }
   
-  .book:hover {
+  .book:hover, .book:focus {
     background-color: var(--dark-brown-for-hover);
     border: none;
   }
@@ -785,6 +846,7 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
+    cursor: pointer;
   }
   
   .description {
@@ -900,6 +962,7 @@
     width: 1199px;
     height: 594px;
     z-index: 0;
+    background-color: var(--grey);
   }
   
   .filter {
@@ -963,7 +1026,7 @@
   .price-container {
     border: 2px solid var(--white);
     font: inherit;
-    width: 316px;
+    min-width: 316px;
     height: 36px;
     font-size: 14px;
     line-height: 21px;
@@ -1013,7 +1076,7 @@
     cursor: pointer;
   }
   
-  .toggle-min:hover {
+  .toggle-min:hover, .toggle-min:focus {
     width: 23px;
     height: 21px;
     border: 8px solid var(--white);
@@ -1025,15 +1088,6 @@
     top: 11px;
     left: 0;
     cursor: pointer;
-  }
-  
-  .information:hover {
-    color: var(--blue);
-  }
-  
-  .information:active {
-    color: var(--black);
-    opacity: 0.3;
   }
   
   .p-filter input {
@@ -1055,6 +1109,10 @@
     border: 2px solid var(--white);
     cursor: pointer;
   }
+
+  .p-filter label::before:disabled{
+    background-color: var(--for-checkbox);
+  }
   
   .p-filter input:checked + label::before {
     border: none;
@@ -1073,7 +1131,7 @@
     cursor: pointer;
   }
   
-  .toggle-max:hover {
+  .toggle-max:hover, .toggle-max:focus {
     width: 23px;
     height: 21px;
     border: 8px solid var(--white);
@@ -1111,11 +1169,11 @@
     fill: var(--grey-for-up-down);
   }
   
-  .icon-up:hover {
+  .icon-up:hover, .icon-up:focus {
     fill: var(--black);
   }
   
-  .icon-down:hover {
+  .icon-down:hover, .icon-down:focus {
     fill: var(--black);
   }
   
@@ -1134,7 +1192,8 @@
   }
   
   .button-show {
-    width: 137px;
+    min-width: 137px;
+    display: inline-block;
     height: 36px;
     border: 2px solid var(--white);
     background-color: transparent;
@@ -1144,11 +1203,11 @@
     text-transform: uppercase;
     font: inherit;
     margin-left: 85px;
-    letter-spacing: -2px;
+    letter-spacing: -0.2px;
     margin-top: 3px;
   }
   
-  .button-show:hover {
+  .button-show:hover, .button-show:focus {
     border: 2px solid var(--white);
     background-color: var(--white);
     color: var(--black);
@@ -1175,7 +1234,7 @@
     opacity: 0.3;
   }
   
-  .social-icons:hover {
+  .social-icons:hover, .social-icons:focus {
     background-color: var(--dark-blue-for-hover);
   }
   
@@ -1192,7 +1251,7 @@
     padding-top: 36px;
   }
   
-  .academy-logo:hover {
+  .academy-logo:hover, .academy-logo:focus {
     fill: var(--blue);
   }
   
@@ -1345,7 +1404,7 @@
     letter-spacing: -1.1px;
   }
   
-  .name-of-hotel:hover {
+  .name-of-hotel:hover, .name-of-hotel:focus {
     color: var(--blue);
   }
   
@@ -1393,6 +1452,7 @@
   }
   
   .section-filter {
+    background-color: var(--blue);
     background-image: url("../img/backgroundbackground-2-photo.png");
     background-size: cover;
   }

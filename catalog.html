@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotels</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="page-body">
     <div class="page-wrapper">
@@ -23,10 +23,10 @@
               <li class="information-nav">
                 <a href="#" class="current-page">информация</a>
               </li>
-              <li class="photo-nav"><a href="#">фото и видео</a></li>
-              <li class="map-nav"><a href="#">карта штата</a></li>
+              <li class="photo-nav"><a href="#" class="photo">фото и видео</a></li>
+              <li class="map-nav"><a href="#" class="map-sedona">карта штата</a></li>
               <li class="current-page hotel-nav">
-                <a class="current-page">гостиницы</a>
+                <a class="current-page" tabindex="0">гостиницы</a>
               </li>
             </ul>
           </nav>
@@ -46,6 +46,7 @@
                   id="check-box1"
                   class="first-column-checkbox"
                   checked
+                  tabindex="0"
                 />
                 <label for="check-box1" class="check-labels-first-column"
                   >бассейн</label
@@ -58,6 +59,7 @@
                   name="parking"
                   id="check-box2"
                   class="first-column-checkbox"
+                  tabindex="0"
                 />
                 <label for="check-box2" class="check-labels-first-column"
                   >парковка</label
@@ -70,6 +72,7 @@
                   name="wi-fi"
                   id="check-box3"
                   class="first-column-checkbox"
+                  tabindex="0"
                 />
                 <label for="check-box3" class="check-labels-first-column"
                   >WI-FI</label
@@ -87,6 +90,7 @@
                   id="check-box4"
                   class="second-column-checkbox"
                   checked
+                  tabindex="0"
                 />
                 <label for="check-box4" class="check-labels-second-column"
                   >гостиница</label
@@ -100,6 +104,7 @@
                   id="check-box5"
                   class="second-column-checkbox"
                   checked
+                  tabindex="0"
                 />
                 <label for="check-box5" class="check-labels-second-column"
                   >мотель</label
@@ -113,6 +118,7 @@
                   id="check-box6"
                   class="second-column-checkbox"
                   checked
+                  tabindex="0"
                 />
                 <label for="check-box6" class="check-labels-second-column"
                   >апартаменты</label
@@ -142,8 +148,8 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
                 </div>
               </div>
               <button type="submit" class="button-show">показать</button>
@@ -161,14 +167,13 @@
             <li><a href="" class="type">по типу:</a></li>
             <li><a href="" class="rate">по рейтингу:</a></li>
           </ul>
-          <a href=""></a>
-          <a href=""></a>
           <svg
             class="icon-up"
             xmlns="http://www.w3.org/2000/svg"
             width="11"
             height="10"
             viewBox="0 0 11 10"
+            tabindex="0"
           >
             <path d="M5.5 0L0 10h11z" />
           </svg>
@@ -178,6 +183,7 @@
             width="11"
             height="10"
             viewBox="0 0 11 10"
+            tabindex="0"
           >
             <path d="M5.5 10L0 0h11" />
           </svg>
@@ -357,5 +363,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
