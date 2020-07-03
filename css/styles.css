@@ -100,13 +100,11 @@
     margin-left: 72px;
     width: 240px;
     text-align: left;
-    letter-spacing: -1.4px;
   }
   
   .photo-nav {
     width: 240px;
     text-align: left;
-    letter-spacing: -1.4px;
     margin-left: -12px;
   }
 
@@ -132,7 +130,6 @@
     width: 240px;
     text-align: right;
     margin-left: 120px;
-    letter-spacing: -1.4px;
   }
   
   .current-page {
@@ -142,7 +139,6 @@
   .hotel-nav {
     width: 240px;
     text-align: right;
-    letter-spacing: -1.4px;
     margin-left: -14px;
   }
   
@@ -201,7 +197,6 @@
     font-size: 14px;
     text-align: center;
     margin-bottom: 54px;
-    letter-spacing: -0.9px;
   }
   
   .real-town h2 {
@@ -210,7 +205,6 @@
     margin-top: 7px;
     font-size: 21px;
     line-height: 21px;
-    letter-spacing: -1.3px;
   }
   
   .real-town-section {
@@ -321,7 +315,6 @@
     text-align: center;
     margin: 43px 349px;
     width: 500px;
-    letter-spacing: -2px;
   }
   
   .p-for-advantages {
@@ -345,7 +338,6 @@
     color: var(--light-black);
     padding-right: 6px;
     margin-top: 44px;
-    letter-spacing: -1px;
   }
   
   .dates-of-journey h2 {
@@ -353,7 +345,6 @@
     text-align: center;
     font-size: 30px;
     line-height: 24px;
-    letter-spacing: 0.4px;
     margin-top: 0px;
     font-stretch: condensed;
     padding-left: 3px;
@@ -365,7 +356,6 @@
     color: var(--light-black);
     text-align: center;
     font-stretch: condensed;
-    letter-spacing: 0.6px;
     padding-top: 7px;
   }
   
@@ -416,11 +406,9 @@
   }
 
   .parent-for-blank {
-    width: 568px;
     z-index: 5;
-    position: absolute;
-    left: 350px;
-    overflow: hidden; 
+    left: calc(50% - 281px);
+    overflow: hidden;
     height: 383px;
   }
   
@@ -434,7 +422,6 @@
     font-size: 14px;
     line-height: 26px;
     font: inherit;
-    letter-spacing: -1px;
     text-transform: uppercase;
     margin-top: -2px;
     font-stretch: condensed;
@@ -485,7 +472,6 @@
     text-transform: uppercase;
     line-height: 26px;
     margin-top: 20px;
-    letter-spacing: -0.5px;
   }
   
   .date-arrive-container {
@@ -515,7 +501,6 @@
     width: 114px;
     text-align: left;
     font-size: 14px;
-    letter-spacing: -1px;
     font-weight: bold;
     line-height: 26px;
     margin-top: -2px;
@@ -525,7 +510,6 @@
     width: 114px;
     text-align: left;
     font-size: 14px;
-    letter-spacing: -1px;
     font-weight: bold;
     line-height: 26px;
     margin-top: 6px;
@@ -555,7 +539,6 @@
   }
   
   .adults-label {
-    letter-spacing: -1px;
     margin-right: 9px;
   }
   
@@ -690,7 +673,6 @@
     padding-top: 2px;
     margin-top: 1px;
     padding-left: 51px;
-    letter-spacing: -1.2px;
     padding-bottom: 37px;
   }
   
@@ -701,7 +683,6 @@
     line-height: 26px;
     color: var(--black);
     padding-top: 2px;
-    letter-spacing: -1.9px;
     margin-top: 0px;
   }
   
@@ -720,7 +701,6 @@
     opacity: 0.3;
     border-bottom: 1px dashed var(--blue);
     padding-top: 33px;
-    letter-spacing: -1px;
     margin-left: -4px;
     padding-bottom: 2px;
   }
@@ -748,7 +728,6 @@
     padding-left: 1px;
     opacity: 0.3;
     padding-bottom: 3px;
-    letter-spacing: -1px;
     margin-left: -5px;
   }
   
@@ -768,7 +747,6 @@
     min-width: 110px;
     padding: 3px 17px;
     background-color: var(--blue);
-    letter-spacing: -1px;
   }
   
   .more:hover, .more:focus {
@@ -793,7 +771,6 @@
     min-width: 142px;
     padding: 3px 0;
     background-color: var(--brown);
-    letter-spacing: -1px;
   }
   
   .book:hover, .book:focus {
@@ -837,7 +814,6 @@
     text-align: center;
     padding: 3px 3px;
     font-size: 14px;
-    letter-spacing: -1px;
     padding-right: 12px;
   }
   
@@ -854,7 +830,6 @@
     line-height: 21px;
     color: var(--light-black);
     margin-bottom: 10px;
-    letter-spacing: -1px;
   }
   
   .price-book .description {
@@ -912,24 +887,20 @@
     font-size: 21px;
     line-height: 21px;
     color: var(--black);
-    letter-spacing: -1.8px;
     margin-top: 13px;
   }
   
   .about-motel {
-    letter-spacing: -0.8px;
     padding-top: 1px;
     padding-left: 4px;
   }
   
   .about-food {
-    letter-spacing: -0.3px;
     padding-left: 20px;
     padding-top: 1px;
   }
   
   .about-gifts {
-    letter-spacing: -0.3px;
     padding-left: 16px;
     padding-top: 1px;
   }
@@ -945,7 +916,6 @@
     font: inherit;
     font-size: 14px;
     line-height: 21px;
-    letter-spacing: -1px;
     color: var(--light-black);
     padding-top: 8px;
   }
@@ -1031,7 +1001,6 @@
     font-size: 14px;
     line-height: 21px;
     padding-top: 6px;
-    letter-spacing: -1px;
     padding-bottom: 6px;
   }
   
@@ -1158,7 +1127,6 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
-    letter-spacing: -1.3px;
     margin-left: -2px;
     padding-top: 1px;
   }
@@ -1203,7 +1171,6 @@
     text-transform: uppercase;
     font: inherit;
     margin-left: 85px;
-    letter-spacing: -0.2px;
     margin-top: 3px;
   }
   
@@ -1257,18 +1224,15 @@
   
   .check-labels-first-column {
     top: -1px;
-    letter-spacing: -0.5px;
   }
   
   .first-legend-filter {
     margin-left: -5px;
-    letter-spacing: -1.3px;
     padding-top: 2px;
   }
   
   .second-legend-filter {
     margin-left: -5px;
-    letter-spacing: -1.3px;
     padding-top: 2px;
   }
   
@@ -1284,12 +1248,8 @@
   
   .check-labels-second-column {
     margin-left: 1px;
-    letter-spacing: -0.5px;
   }
   
-  .visit-sedona {
-    letter-spacing: -1.3px;
-  }
   
   .academy-logo:active {
     fill: var(--black-for-html-academy);
@@ -1304,7 +1264,6 @@
   .telephone {
     display: block;
     font-family: "PT Sans";
-    letter-spacing: 0.6px;
     padding-top: 9px;
   }
   
@@ -1401,7 +1360,6 @@
     font-weight: bold;
     line-height: 26px;
     font-family: inherit;
-    letter-spacing: -1.1px;
   }
   
   .name-of-hotel:hover, .name-of-hotel:focus {
@@ -1419,13 +1377,11 @@
     line-height: 21px;
     color: var(--black);
     margin-top: 1px;
-    letter-spacing: -2.3px;
   }
   
   .p-for-bridge {
     padding-left: 52px;
     padding-right: 52px;
-    letter-spacing: -1px;
     padding-top: 9px;
   }
   
@@ -1483,7 +1439,6 @@
     display: inline;
     font-size: 12px;
     line-height: 18px;
-    letter-spacing: -1px;
   }
   
   .hotels li:not(:first-child) {
