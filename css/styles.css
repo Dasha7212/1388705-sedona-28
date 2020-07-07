@@ -42,21 +42,7 @@
     --toggle: #ababab;
     --for-checkbox: #6a6a6a;
   }
-  
-    /* @keyframes down {
-      from {
-        -webkit-transform: translate(-50%, -400px);
-        transform: translate(-50%, -400px);
-      }
-    
-      to {
-        -webkit-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
-      }
-   
-  }   */
 
-  
   .page {
     height: 100%;
   }
@@ -400,7 +386,7 @@
     font-weight: bold;
     padding: 55px 54px 41px 54px;
     position: absolute;
-    left: 0px;
+    left: calc(50% - 282px);
     width: 568px;
     z-index: 3;
   }
@@ -933,6 +919,7 @@
     height: 594px;
     z-index: 0;
     background-color: var(--grey);
+    margin-top: -382px;
   }
   
   .filter {
