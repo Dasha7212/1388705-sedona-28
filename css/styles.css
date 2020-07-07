@@ -348,9 +348,11 @@
   .search-hotels {
     margin-left: 318px;
     font: inherit;
+    vertical-align: middle;
     text-align: center;
     min-width: 568px;
     height: 86px;
+    vertical-align: middle;
     font-weight: bold;
     font-size: 21px;
     padding-top: 4px;
@@ -451,6 +453,7 @@
   .search {
     min-width: 458px;
     height: 58px;
+    vertical-align: middle;
     display: inline-block;
     background-color: var(--blue);
     color: var(--white);
@@ -784,6 +787,7 @@
   .span-for-star {
     height: 17px;
     width: 18px;
+    vertical-align: middle;
     margin-right: 2px;
     margin-top: -px;
     display: inline-block;
@@ -1150,6 +1154,7 @@
   
   .button-show {
     min-width: 137px;
+    vertical-align: middle;
     display: inline-block;
     height: 36px;
     border: 2px solid var(--white);
