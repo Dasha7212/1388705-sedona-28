@@ -393,9 +393,11 @@
 
   .parent-for-blank {
     z-index: 5;
-    left: calc(50% - 281px);
+    left: calc(50% - 283px);
+    position: relative;
     overflow: hidden;
     height: 383px;
+    width: 568px;
   }
   
   .dates {
