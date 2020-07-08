@@ -157,6 +157,7 @@
     text-align: center;
     padding-top: 77px;
     margin-left: 370px;
+    z-index: 1;
   }
   
   .figure {
@@ -274,21 +275,21 @@
   }
   
   .food {
-    background-image: url(../img/icon-3.svg);
+    background-image: url(../img/icon-present.svg);
     background-size: 75px 70px;
     background-position: center 61px;
     background-repeat: no-repeat;
   }
   
   .souvenirs {
-    background-image: url(../img/icon-2.svg);
+    background-image: url(../img/icon-food.svg);
     background-size: 80px 74px;
     background-position: center 58px;
     background-repeat: no-repeat;
   }
   
   .house {
-    background-image: url(../img/icon-1.svg);
+    background-image: url(../img/icon-house.svg);
     background-size: 75px 70px;
     background-position: center 61px;
     background-repeat: no-repeat;
@@ -301,6 +302,7 @@
     text-align: center;
     margin: 43px 349px;
     width: 500px;
+    letter-spacing: -0.3px;
   }
   
   .p-for-advantages {
@@ -331,7 +333,7 @@
     text-align: center;
     font-size: 30px;
     line-height: 24px;
-    margin-top: 0px;
+    margin-top: 0;
     font-stretch: condensed;
     padding-left: 3px;
   }
@@ -674,7 +676,7 @@
     line-height: 26px;
     color: var(--black);
     padding-top: 2px;
-    margin-top: 0px;
+    margin-top: 0;
   }
   
   .price {
@@ -791,11 +793,11 @@
     margin-right: 2px;
     margin-top: -px;
     display: inline-block;
-    background-image: url(../img/star.svg);
+    background-image: url(../img/icon-star.svg);
   }
   
   .page-wrapper {
-    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   }
   
   .rating {
@@ -961,18 +963,18 @@
   
   .filter fieldset:not(.type-of-life) {
     border: none;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
     height: 158px;
   }
   .type-of-life {
     padding-left: 117px;
     border: none;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
     height: 158px;
   }
   
@@ -1087,11 +1089,12 @@
     left: -38px;
     width: 26px;
     height: 26px;
-    background-image: url("../img/checkbox-on.svg");
+    background-image: url("../img/icon-checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     cursor: pointer;
   }
+
   
   .toggle-max:hover, .toggle-max:focus {
     width: 23px;
@@ -1315,13 +1318,13 @@
   }
   
   .advantages ul {
-    margin: 0px;
+    margin: 0;
     display: flex;
   }
   
   ul {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
   .number {
     text-align: center;
@@ -1334,7 +1337,7 @@
     margin-top: -16px;
   }
   .name-hotel h3 {
-    margin: 0px;
+    margin: 0;
   }
   
   .hotel-more,
@@ -1440,7 +1443,7 @@
   }
   
   .hotels ul {
-    padding-top: 0px;
+    padding-top: 0;
     padding-left: 40px;
   }
   
@@ -1449,7 +1452,7 @@
   }
   
   .p-filter {
-    margin: 0px;
+    margin: 0;
   }
   
   .first {
