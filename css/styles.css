@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
     font-family: "PTSans", "Arial", sans-serif;
     src: url("../fonts/web/ptsans.woff2") format("woff2"),
       url("../fonts/web/ptsans.woff") format("woff");
@@ -48,8 +48,8 @@
   }
   
   body {
-    min-width: 1220px;
-    margin: 0;
+    width: 1200px;
+    margin: 0 auto;
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     line-height: 21px;
@@ -178,20 +178,24 @@
   }
   
   .is-not-attraction {
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-left: 37px;
+    padding-right: 37px;
     margin-top: 23px;
     font-size: 14px;
     text-align: center;
     margin-bottom: 54px;
+    letter-spacing: 0.2px;
+    font-stretch: condensed;
   }
   
   .real-town h2 {
-    max-width: 225px;
+    max-width: 205px;
     margin: 0 auto;
     margin-top: 7px;
     font-size: 21px;
     line-height: 21px;
+    letter-spacing: 0.7px;
+    font-stretch: condensed;
   }
   
   .real-town-section {
@@ -383,7 +387,6 @@
     background-color: var(--white);
     font: inherit;
     font-weight: bold;
-    background-color: var(--white);
     font-size: 14px;
     font: inherit;
     line-height: 26px;
@@ -407,21 +410,40 @@
   .dates {
     border: none;
     width: 308px;
-    padding: 6px 0 6px 12px;
+    padding-top: 6px;
+    padding-right: 0;
+    padding-bottom: 6px;
+    padding-left: 12px;
     height: 38px;
     background-color: var(--light-grey);
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
-    font: inherit;
+    font-family: inherit;
     text-transform: uppercase;
     margin-top: -2px;
     font-stretch: condensed;
   }
 
+  .dates::placeholder {
+    color: var(--black);
+  }
+
+  .h-for-hotel{
+    font-weight: 790;
+  }
+
   .modal-show {
     transform: translate(0, 0);
     transition: all 2s ;
+  }
+
+  .icons {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    height: 10px;
   }
 
   .modal {
@@ -507,10 +529,19 @@
     line-height: 26px;
     margin-top: 6px;
   }
+
+  .calendar-svg-icon{
+    position: relative;
+    right: 3px;
+    top: 4px;
+  }
   
   .bridge h2 {
-    margin-top: 21px;
+    margin-top: 19px;
+    margin-bottom: 18px;
     font-size: 21px;
+    letter-spacing: 0.4px;
+    font-stretch: condensed;
   }
   
   .second-number {
@@ -518,6 +549,7 @@
     font-size: 14px;
     line-height: 21px;
     padding-top: 7px;
+    font-stretch: semi-condensed;
   }
   
   .calendar {
@@ -547,14 +579,35 @@
   
   .button-minus {
     position: relative;
+    background-color: var(--light-grey);
     left: 30px;
     border: none;
     bottom: 3px;
+    width: 11px;
   }
   
   .minus {
     fill: var(--grey-for-calendar-icon);
     background-color: var(--light-grey);
+    position: relative;
+    right: 12px;
+    top: 1px;
+  }
+
+  .union-adults {
+    position: relative;
+    right: 2px;
+    top: 1px;
+  }
+
+  .union-children {
+    position: relative;
+    right: 7px;
+    top: 2px;
+  }
+
+  .children {
+    padding-left: 32px;
   }
   
   .minus:hover, .minus:focus {
@@ -636,7 +689,7 @@
     display: block;
     width: 46px;
     height: 48px;
-    fill: #fff;
+    fill: var(--white);
     background-color: var(--blue);
     position: relative;
     margin-right: 6px;
@@ -644,10 +697,12 @@
   
   .socials {
     list-style: none;
+    padding-left: calc((400px - 156px)/2);
   }
   
   .phone {
     color: var(--black);
+    letter-spacing: 2px;
   }
   
   .hotels h1 {
@@ -665,7 +720,7 @@
     color: var(--black);
     padding-top: 2px;
     margin-top: 1px;
-    padding-left: 51px;
+    padding-left: 32px;
     padding-bottom: 37px;
   }
   
@@ -684,7 +739,7 @@
     font-size: 12px;
     line-height: 18px;
     padding-top: 3px;
-    padding-left: 3px;
+    margin-left: -9px;
   }
   
   .type {
@@ -694,7 +749,7 @@
     opacity: 0.3;
     border-bottom: 1px dashed var(--blue);
     padding-top: 33px;
-    margin-left: -4px;
+    margin-left: -14px;
     padding-bottom: 2px;
   }
   
@@ -721,7 +776,7 @@
     padding-left: 1px;
     opacity: 0.3;
     padding-bottom: 3px;
-    margin-left: -5px;
+    margin-left: -11px;
   }
   
   .hotels span {
@@ -738,8 +793,11 @@
     margin-top: 17px;
     display: block;
     min-width: 110px;
-    padding: 3px 17px;
+    padding-top: 3px;
+    padding-right: 17px;
     background-color: var(--blue);
+    letter-spacing: 0.4px;
+    font-stretch: condensed;
   }
   
   .more:hover, .more:focus {
@@ -762,7 +820,8 @@
     margin-right: px;
     display: block;
     min-width: 142px;
-    padding: 3px 0;
+    padding-top: 3px;
+    padding-right: 0;
     background-color: var(--brown);
   }
   
@@ -791,9 +850,9 @@
     width: 18px;
     vertical-align: middle;
     margin-right: 2px;
-    margin-top: -px;
     display: inline-block;
     background-image: url(../img/icon-star.svg);
+    margin-top: -10px;
   }
   
   .page-wrapper {
@@ -806,7 +865,7 @@
     width: 110px;
     margin-top: 40px;
     text-align: center;
-    padding: 3px 3px;
+    padding-top: 3px;
     font-size: 14px;
     padding-right: 12px;
   }
@@ -833,8 +892,6 @@
   }
   
   .main-footer-second .footer-container-second {
-    padding-right: 101px;
-    padding-left: 117px;
     display: grid;
     margin-top: -4px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -847,14 +904,27 @@
     text-align: center;
   }
   
-  .real-town h2 .bridge h2 {
+  .real-town h2 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--white);
+  }
+
+  .bridge h2 {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
     color: var(--white);
   }
   
-  .real-town p .bridge p {
+  .real-town p {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white);
+  }
+
+  .bridge p {
     font-size: 14px;
     line-height: 21px;
     color: var(--white);
@@ -908,7 +978,7 @@
   
   .advantages p {
     font: inherit;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 21px;
     color: var(--light-black);
     padding-top: 8px;
@@ -949,6 +1019,9 @@
     font-size: 16px;
     line-height: 21px;
     color: var(--white);
+    font-stretch: condensed;
+    padding-top: 0.5px;
+    padding-right: 10px;
   }
   
   .filter label:not(.max-price):not(.min-price) {
@@ -968,7 +1041,9 @@
     padding-right: 0;
     padding-left: 0;
     height: 158px;
+    margin-left: 6px;
   }
+
   .type-of-life {
     padding-left: 117px;
     border: none;
@@ -986,6 +1061,8 @@
     border: none;
     color: var(--white);
     margin-left: auto;
+    position: relative;
+    left: 358px;
   }
   
   .price-container {
@@ -1033,7 +1110,7 @@
     background-color: var(--toggle);
     padding: 2px 2px;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 #ababab;
+    box-shadow: 0 2px 1px 0 var(--toggle);
     position: absolute;
     top: 11px;
     left: 0;
@@ -1047,7 +1124,7 @@
     background-color: var(--toggle);
     padding: 2px 2px;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 #ababab;
+    box-shadow: 0 2px 1px 0 var(--toggle);
     position: absolute;
     top: 11px;
     left: 0;
@@ -1103,7 +1180,7 @@
     background-color: var(--toggle);
     padding: 2px 2px;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 #ababab;
+    box-shadow: 0 2px 1px 0 var(--toggle);
     position: absolute;
     top: 11px;
     left: 290;
@@ -1128,7 +1205,7 @@
   }
   
   .icon-up {
-    margin-left: 450px;
+    margin-left: 490px;
     margin-top: 12px;
     fill: var(--grey-for-up-down);
   }
@@ -1177,10 +1254,17 @@
     color: var(--black);
   }
   .contacts {
-    padding-top: 4px;
-    padding-left: 13px;
+    margin: auto;
+    padding-left: 90px;
+    font-stretch: condensed;
   }
   
+  .visit-sedona {
+    margin-top: -11px;
+    display: block;
+    letter-spacing: 0.5px;
+  }
+
   .socials {
     display: flex;
     margin-top: 36px;
@@ -1209,10 +1293,11 @@
   .academy-logo {
     fill: var(--black-for-html-academy);
     margin-left: 10px;
+    vertical-align: middle;
   }
   
   .website span {
-    padding-top: 36px;
+    vertical-align: middle;
   }
   
   .academy-logo:hover, .academy-logo:focus {
@@ -1260,28 +1345,25 @@
   
   .telephone {
     display: block;
-    font-family: "PT Sans";
+    font-family: "PTSans", "Arial", sans-serif;
     padding-top: 9px;
   }
   
   .main-footer .footer-container {
-    padding-right: 101px;
-    padding-left: 117px;
+   
     display: grid;
     margin-top: -121px;
     grid-template-columns: 1fr 1fr 1fr;
   }
   
   .section-for-contacts {
-    text-align: left;
-    width: 251px;
+    width: 400px;
+    display: flex;
     line-height: 9px;
   }
   
   .section-for-socials {
-    margin: 0 auto;
-    width: 138px;
-    margin-left: 80px;
+    width: 400px;
   }
   
   .map iframe {
@@ -1289,12 +1371,9 @@
   }
   
   .website {
-    padding-left: 117px;
-    display: flex;
-  }
-  
-  .website a {
-    padding-top: 25px;
+    width: fit-content;
+    margin: auto;
+    font-stretch: condensed;
   }
   
   .current-page {
@@ -1323,14 +1402,20 @@
   }
   
   ul {
-    padding: 0;
+    padding-left: 0;
     margin: 0;
   }
+
   .number {
     text-align: center;
     font-size: 14px;
     line-height: 21px;
     padding-top: 12px;
+  }
+
+  .section-for-website{
+    width: 400px;
+    display: flex;
   }
   
   .deserves-more {
@@ -1354,8 +1439,9 @@
     position: relative;
     top: -6px;
     color: var(--black);
-    font-weight: bold;
+    font-weight: 900;
     line-height: 26px;
+    letter-spacing: -0.5px;
     font-family: inherit;
   }
   
@@ -1377,8 +1463,10 @@
   }
   
   .p-for-bridge {
-    padding-left: 52px;
-    padding-right: 52px;
+    padding-left: 53px;
+    padding-right: 53px;
+    letter-spacing: 0.5px;
+    font-stretch: condensed;
     padding-top: 9px;
   }
   

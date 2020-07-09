@@ -35,17 +35,16 @@
 
      var formI = formWindow.querySelector("form");
 
-     formI.addEventListener("submit", function (evt){
-       evt.preventDefault();
-       if (!arriveDate.value || !leaveDate.value || !adults.value) {
+       formI.addEventListener("submit", function (evt){
+         evt.preventDefault();
+         if (!arriveDate.value || !leaveDate.value || !adults.value) {
          evt.preventDefault();
          console.log("Необходимо ввести дату заезда, отъезда и количество взрослых");
-        }
-        else {
-          localStorage.setItem("adults", adults.value);
-          localStorage.setItem("children", children.value);
-       }
-        
-      });
+         }
+         else {
+           localStorage.setItem("adults", adults.value);
+           localStorage.setItem("children", children.value);
+         }
+       });
       
      

@@ -148,8 +148,9 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0" alt="кружок минимальный для фильтра"></div>
-                  <div class="toggle toggle-max" tabindex="0" alt="кружок максимальный для фильтра"></div>
+                 
+                   <button class="toggle toggle-min" tabindex="0" alt="кружок минимальный для фильтра"></button>
+                   <button class="toggle toggle-max" tabindex="0" alt="кружок максимальный для фильтра"></button>
                 </div>
               </div>
               <button type="submit" class="button-show">показать</button>
@@ -167,6 +168,7 @@
             <li><a href="" class="type">по типу:</a></li>
             <li><a href="" class="rate">по рейтингу:</a></li>
           </ul>
+          <button class="icons">
           <svg
             class="icon-up"
             xmlns="http://www.w3.org/2000/svg"
@@ -178,6 +180,8 @@
           >
             <path d="M5.5 0L0 10h11z" />
           </svg>
+          </button>
+          <button class="icons">
           <svg
             class="icon-down"
             xmlns="http://www.w3.org/2000/svg"
@@ -189,6 +193,7 @@
           >
             <path d="M5.5 10L0 0h11" />
           </svg>
+        </button>
         </div>
       </section>
 
@@ -203,7 +208,7 @@
           />
           <div class="name-hotel">
             <a href="#" class="name-of-hotel">
-              <h3>amara resort & spa</h3>
+              <h3 class="h-for-hotel">amara resort & spa</h3>
             </a>
             <div class="hotel-more">
               <span class="description">гостиница</span>
@@ -237,7 +242,7 @@
           />
           <div class="name-hotel">
             <a href="#" class="name-of-hotel">
-              <h3>desert quail inn</h3>
+              <h3 class="h-for-hotel">desert quail inn</h3>
             </a>
             <div class="hotel-more">
               <span class="description">мотель</span>
@@ -270,7 +275,7 @@
           />
           <div class="name-hotel">
             <a href="#" class="name-of-hotel">
-              <h3>villas at poco diablo</h3>
+              <h3 class="h-for-hotel">villas at poco diablo</h3>
             </a>
             <div class="hotel-more">
               <span class="description">апартаменты</span>
@@ -300,7 +305,7 @@
               <span class="telephone"
                 >тел:
                 <a href="tel:+74956660166" class="phone"
-                  >+7(495)666-01-66</a
+                  >+7(495) 666-01-66</a
                 ></span
               >
             </p>
@@ -308,9 +313,9 @@
           <section class="section-for-socials">
             <ul class="socials">
               <li>
-                <a href="#" class="social-icons">
+                <a href="#" class="social-icons" alt="иконки социальных сетей">
                   <img
-                    src="img/twitter.svg"
+                    src="img/icon-twitter.svg"
                     width="17"
                     height="16"
                     alt="Твиттер"
@@ -332,7 +337,7 @@
               <li>
                 <a href="#" class="social-icons">
                   <img
-                    src="img/youtube.svg"
+                    src="img/icon-youtube.svg"
                     width="20"
                     height="16"
                     alt="Youtube"
@@ -342,9 +347,10 @@
             </ul>
           </section>
 
+          <section class="section-for-website">
           <p class="website">
             <span>website by</span>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" alt="ссылка на страницу академии">
               <svg
                 width="114"
                 height="40"
@@ -362,9 +368,10 @@
               </svg>
             </a>
           </p>
-        </div>
+        </section>
+       </div>
       </footer>
     </div>
-    <script src="js/script-for-cataloge-min.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
