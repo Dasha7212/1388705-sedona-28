@@ -1570,7 +1570,3 @@ li {
 .p-filter:not(.first) {
   padding-top: 25px;
 }
-
-.modal-error {
-  animation: shake 0.6s;
-}

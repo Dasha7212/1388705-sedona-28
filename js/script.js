@@ -15,6 +15,7 @@
        buttonSearch.addEventListener("click", function (evt){
          evt.preventDefault();
          formWindow.classList.toggle("modal");
+         
        });
 
        show.ontransitionend = function(){
@@ -26,8 +27,6 @@
          evt.preventDefault();
          formWindow.classList.toggle("modal-show");
          show.style.transition= "all 2s";
-         formWindow.classList.remove("modal-error")
-     
           if (storage) {
             adults.value = storage;
            children.value = storageChildren;
@@ -40,7 +39,6 @@
          evt.preventDefault();
          if (!arriveDate.value || !leaveDate.value || !adults.value) {
          evt.preventDefault();
-         formWindow.classList.add("modal-error")
          console.log("Необходимо ввести дату заезда, отъезда и количество взрослых");
          }
          else {
