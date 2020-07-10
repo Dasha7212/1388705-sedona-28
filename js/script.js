@@ -26,6 +26,7 @@
          evt.preventDefault();
          formWindow.classList.toggle("modal-show");
          show.style.transition= "all 2s";
+         formWindow.classList.remove("modal-error")
      
           if (storage) {
             adults.value = storage;
@@ -39,6 +40,7 @@
          evt.preventDefault();
          if (!arriveDate.value || !leaveDate.value || !adults.value) {
          evt.preventDefault();
+         formWindow.classList.add("modal-error")
          console.log("Необходимо ввести дату заезда, отъезда и количество взрослых");
          }
          else {
