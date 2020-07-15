@@ -163,7 +163,7 @@
         </section>
 
       <div class="parent-for-blank">
-        <div class="blank  modal-show">
+        <div class="blank  modal-show form-error">
           <form action="https://echo.htmlacademy.ru" method="get"> 
             <div class="date-arrive-container">
               <label for="arrive-date">Дата заезда:</label>
@@ -175,7 +175,7 @@
                 name="arrival-date"
                 class="dates"
               />
-              <button class="calendar">
+              <button class="calendar" name="календарь">
                 <svg
                   class="calendar-svg-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -202,7 +202,7 @@
                 name="departure-date"
                 class="dates"
               />
-              <button type="button" class="calendar">
+              <button type="button" class="calendar" name="календарь">
                 <svg class="calendar-svg-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -221,7 +221,7 @@
             <div class="adults-and-children">
               <div class="adults-container">
                 <label for="adults" class="adults-label">Взрослые:</label>
-                <button type="button" class="button-minus">
+                <button type="button" class="button-minus" name="минус">
                   <svg
                     class="minus"
                     width="12"
@@ -242,7 +242,7 @@
                   name="amount-of-adults"
                   class="people"
                 />
-                <button type="button" class="button-union-first">
+                <button type="button" class="button-union-first" name="плюс">
                   <svg
                     class="union union-adults"
                     width="11"
@@ -263,7 +263,7 @@
               </div>
               <div class="children-container">
                 <label for="children" class="children-label">Дети:</label>
-                <button type="button" class="button-minus">
+                <button type="button" class="button-minus" name="минус">
                   <svg
                     class="minus"
                     width="12"
@@ -284,7 +284,7 @@
                   name="amount-of-children"
                   class="people children"
                 />
-                <button type="button" class="button-union-second">
+                <button type="button" class="button-union-second" name="плюс">
                   <svg
                     class="union union-children"
                     width="11"
@@ -339,7 +339,7 @@
           <section class="section-for-socials">
             <ul class="socials">
               <li>
-                <a href="#" class="social-icons">
+                <a href="#" class="social-icons" aria-label="иконки социальных сетей">
                   <img
                     src="img/icon-twitter.svg"
                     width="17"
@@ -376,7 +376,7 @@
           <section class="section-for-website">
           <p class="website">
             <span>website by</span>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="ссылка на HTML academy">
               <svg
                 width="114"
                 height="40"
